@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="color-scheme" content="dark light">
+	<title>Port Guard — Local Navigation</title>
+	<link rel="icon" type="image/png" href="../icons/icon_32.png">
+	<link rel="stylesheet" type="text/css" href="../../umatrix/css/common.css">
+	<link rel="stylesheet" type="text/css" href="./prompt.css">
+</head>
+<body>
+	<header>
+		<img src="../icons/icon_48.png" width="28" height="28" alt="">
+		<h1>Local Navigation Blocked</h1>
+	</header>
+	<main>
+		<p id="prompt-text">A page on the internet wants to open a local address.</p>
+		<dl id="request-details">
+			<dt>From</dt>
+			<dd id="detail-origin">—</dd>
+			<dt>To</dt>
+			<dd id="detail-destination">—</dd>
+			<dt>Protocol</dt>
+			<dd id="detail-protocol">—</dd>
+		</dl>
+		<div id="action-row">
+			<button type="button" id="btn-block">Block</button>
+			<button type="button" id="btn-allow-once">Allow Once</button>
+			<button type="button" id="btn-always-allow">Always Allow</button>
+		</div>
+	</main>
+	<script type="module" src="./prompt.js"></script>
+</body>
+</html>

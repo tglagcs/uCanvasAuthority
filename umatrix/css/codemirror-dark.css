@@ -1,0 +1,63 @@
+/* Minimal dark override for the vendored CodeMirror library + merge addon
+ * (used by the My Rules / Raw Settings / Asset Viewer panels). Only the
+ * structural chrome is touched (editor surface, gutter, selection, diff
+ * chunk backgrounds) — not every syntax-highlighting color, since these
+ * panels mostly show plain rule lines rather than real syntax-highlighted
+ * code. */
+
+.CodeMirror {
+	background: var(--bg);
+	color: var(--fg);
+}
+.CodeMirror-scrollbar-filler,
+.CodeMirror-gutter-filler {
+	background-color: var(--bg);
+}
+.CodeMirror-gutters {
+	border-right: 1px solid var(--border);
+	background-color: var(--bg-elevated);
+}
+.CodeMirror-guttermarker,
+.CodeMirror-guttermarker-subtle,
+.CodeMirror-linenumber {
+	color: var(--fg-muted);
+}
+.CodeMirror-cursor {
+	border-left: 1px solid var(--fg);
+}
+.CodeMirror-selected {
+	background: var(--bg-input);
+}
+.CodeMirror-activeline-background {
+	background: var(--bg-elevated);
+}
+
+/* Merge/diff view (My Rules panel) */
+.CodeMirror-merge {
+	border-color: var(--border);
+}
+.CodeMirror-merge-pane {
+	background: var(--bg);
+}
+.CodeMirror-merge-gap {
+	background: var(--bg-elevated);
+	border-left: 1px solid var(--border);
+	border-right: 1px solid var(--border);
+}
+.CodeMirror-merge-copy {
+	color: var(--accent);
+}
+.CodeMirror-merge-r-chunk {
+	background: var(--allow-weak-bg);
+}
+.CodeMirror-merge-l-chunk {
+	background: var(--block-weak-bg);
+}
+.CodeMirror-merge-l-chunk.CodeMirror-merge-r-chunk {
+	background: var(--bg-input);
+}
+.CodeMirror-merge-r-connect,
+.CodeMirror-merge-l-connect {
+	fill: var(--bg-elevated);
+	stroke: var(--border);
+}

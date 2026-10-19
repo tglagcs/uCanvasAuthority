@@ -1,0 +1,67 @@
+body {
+	font-family: system-ui, sans-serif;
+	margin: 1.5em;
+	max-width: 40em;
+	background: #23222B;
+	color: #BFBFC9;
+}
+h1 {
+	font-size: 1.2em;
+	border-bottom: 1px solid #45444f;
+	padding-bottom: 0.3em;
+	margin-top: 1.6em;
+}
+h1:first-of-type {
+	margin-top: 0;
+}
+#exportCanvasBlockerButton,
+#exportUmatrixButton {
+	margin-right: 0.5em;
+}
+code {
+	background: #35343f;
+	padding: 0.1em 0.3em;
+	border-radius: 3px;
+}
+input[type="file"] {
+	color: #BFBFC9;
+}
+#fileList {
+	padding-left: 0;
+	list-style: none;
+}
+#fileList li {
+	padding: 0.3em 0;
+}
+#fileList label {
+	color: #8d8d99;
+}
+#restartWarning {
+	color: #ffb24a;
+}
+#restartWarning.hidden {
+	display: none;
+}
+#log {
+	margin-top: 1em;
+	font-family: monospace;
+	white-space: pre-wrap;
+	color: #8d8d99;
+}
+button {
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	border: 1px solid #45444f;
+	border-radius: 4px;
+	background: #35343f;
+	color: #BFBFC9;
+	cursor: pointer;
+}
+button:hover:not(:disabled) {
+	background: #45444f;
+}
+button:disabled {
+	color: #8d8d99;
+	cursor: default;
+	opacity: 0.6;
+}

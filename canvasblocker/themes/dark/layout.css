@@ -1,0 +1,14 @@
+body {
+	/* Matches the shared palette used across the merged extension's uMatrix
+	 * and Port Authority pages (#23222B / #BFBFC9 / #4a9eff), so CanvasBlocker's
+	 * UI doesn't look like a different theme bolted onto the popup/dashboard. */
+	--background-color: #23222B;
+	--input-background-color: #35343f;
+	--input-error-background-color: rgb(92, 24, 24);
+	--text-color: #BFBFC9;
+	--link-color: #4a9eff;
+	--button-background-image: linear-gradient(transparent 0%, rgba(255, 255, 255, 0.1) 100%);
+	--stacked-inputs-border-color: #45444f;
+	--stacked-inputs-focus-color: #45444f;
+	--highlight-color: rgb(26, 92, 24);
+}

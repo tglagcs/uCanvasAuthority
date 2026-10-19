@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>uCanvasAuthority</title>
+	<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+	<div id="app">
+		<div id="tabStrip">
+			<button class="tabButton selected" data-tab="matrix">Matrix</button>
+			<button class="tabButton" data-tab="canvas">Canvas</button>
+			<button class="tabButton" data-tab="ports">Ports</button>
+		</div>
+		<div id="tabPanels">
+			<iframe id="panel-matrix" class="tabPanel selected" src="umatrix/popup.html"></iframe>
+			<iframe id="panel-canvas" class="tabPanel" src="canvasblocker/browserAction/browserAction.html"></iframe>
+			<iframe id="panel-ports" class="tabPanel" src="portguard/popup/popup.html"></iframe>
+		</div>
+	</div>
+	<script src="popup.js"></script>
+</body>
+</html>

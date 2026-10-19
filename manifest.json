@@ -1,0 +1,141 @@
+{
+	"manifest_version": 2,
+	"name": "uCanvasAuthority",
+	"description": "Unified canvas-fingerprint protection (CanvasBlocker), port-scan/tracker blocking (Port Guard) and matrix firewall (uMatrix).",
+	"version": "1.0.0",
+	"default_locale": "en",
+
+	"icons": {
+		"16": "umatrix/img/icon_16.png",
+		"32": "umatrix/img/icon_32.png",
+		"48": "umatrix/img/icon_48.png",
+		"64": "umatrix/img/icon_64.png",
+		"96": "umatrix/img/icon_96.png",
+		"128": "umatrix/img/icon_128.png"
+	},
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "uCanvasAuthority@tglagcs",
+			"strict_min_version": "140.0",
+			"data_collection_permissions": {
+				"required": ["none"]
+			}
+		},
+		"gecko_android": {
+			"strict_min_version": "142.0"
+		}
+	},
+
+	"permissions": [
+		"<all_urls>",
+		"storage",
+		"tabs",
+		"webRequest",
+		"webRequestBlocking",
+		"contextualIdentities",
+		"cookies",
+		"privacy",
+		"notifications",
+		"dns",
+		"browsingData",
+		"webNavigation"
+	],
+
+	"background": {
+		"page": "background.html"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"all_frames": true,
+			"run_at": "document_start",
+			"js": [
+				"shared/storage-namespace.js",
+
+				"umatrix/js/vapi.js",
+				"umatrix/js/vapi-client.js",
+				"umatrix/js/contentscript-start.js",
+
+				"canvasblocker/lib/require.js",
+				"canvasblocker/lib/logging.js",
+				"canvasblocker/lib/extension.js",
+
+				"canvasblocker/lib/settingDefinitions.js",
+				"canvasblocker/lib/settingContainers.js",
+				"canvasblocker/lib/settings.js",
+
+				"canvasblocker/lib/colorStatistics.js",
+				"canvasblocker/lib/webglRandom.js",
+				"canvasblocker/lib/webgl.js",
+				"canvasblocker/lib/hash.js",
+				"canvasblocker/lib/modifiedAPIFunctions.js",
+				"canvasblocker/lib/modifiedCanvasAPI.js",
+				"canvasblocker/lib/modifiedAudioAPI.js",
+				"canvasblocker/lib/modifiedHistoryAPI.js",
+				"canvasblocker/lib/modifiedWindowAPI.js",
+				"canvasblocker/lib/modifiedDOMRectAPI.js",
+				"canvasblocker/lib/modifiedSVGAPI.js",
+				"canvasblocker/lib/modifiedTextMetricsAPI.js",
+				"canvasblocker/lib/navigator.js",
+				"canvasblocker/lib/modifiedNavigatorAPI.js",
+				"canvasblocker/lib/modifiedScreenAPI.js",
+				"canvasblocker/lib/modifiedAPI.js",
+				"canvasblocker/lib/randomSupplies.js",
+				"canvasblocker/lib/intercept.js",
+
+				"canvasblocker/lib/callingStack.js",
+				"canvasblocker/lib/askForPermission.js",
+
+				"canvasblocker/lib/lists.js",
+				"canvasblocker/lib/check.js",
+				"canvasblocker/lib/iframeProtection.js",
+
+				"canvasblocker/lib/frame.js"
+			]
+		},
+		{
+			"matches": ["<all_urls>"],
+			"all_frames": true,
+			"run_at": "document_end",
+			"js": ["umatrix/js/contentscript.js"]
+		}
+	],
+
+	"options_ui": {
+		"browser_style": false,
+		"open_in_tab": true,
+		"page": "umatrix/dashboard.html"
+	},
+
+	"browser_action": {
+		"browser_style": false,
+		"default_icon": {
+			"16": "umatrix/img/icon_16.png",
+			"19": "umatrix/img/icon_19.png",
+			"32": "umatrix/img/icon_32.png",
+			"38": "umatrix/img/icon_38.png",
+			"48": "umatrix/img/icon_48.png",
+			"64": "umatrix/img/icon_64.png"
+		},
+		"default_title": "uCanvasAuthority",
+		"default_popup": "popup.html"
+	},
+
+	"page_action": {
+		"browser_style": false,
+		"default_icon": "canvasblocker/icons/pageAction-printed.svg",
+		"default_popup": "canvasblocker/pageAction/pageAction.html"
+	},
+
+	"sidebar_action": {
+		"default_title": "Logger",
+		"default_panel": "umatrix/logger-ui.html",
+		"default_icon": {
+			"16": "umatrix/img/icon_16.png",
+			"128": "umatrix/img/icon_128.png"
+		},
+		"open_at_install": false
+	}
+}

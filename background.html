@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>uCanvasAuthority background</title>
+</head>
+<body>
+<!-- Storage namespacing shim: must load before any of the three subsystems below. -->
+<script src="shared/storage-namespace.js"></script>
+
+<!-- Draws the shared browser-action icon/badge/tooltip (uMatrix's count and
+     CanvasBlocker's status both need it); must load before tab.js and
+     notification.js call into it below. -->
+<script src="shared/badge-composer.js"></script>
+
+<!-- uMatrix core (order load-bearing; unchanged from uMatrix-master/src/background.html,
+     with platform/chromium then platform/firefox overlay files already applied in place). -->
+<script src="umatrix/js/console.js"></script>
+<script src="umatrix/lib/lz4/lz4-block-codec-any.js"></script>
+<script src="umatrix/lib/punycode.js"></script>
+<script src="umatrix/lib/publicsuffixlist/publicsuffixlist.js"></script>
+<script src="umatrix/js/webext.js"></script>
+<script src="umatrix/js/vapi.js"></script>
+<script src="umatrix/js/vapi-common.js"></script>
+<script src="umatrix/js/vapi-background.js"></script>
+<script src="umatrix/js/vapi-webrequest.js"></script>
+<script src="umatrix/js/background.js"></script>
+<script src="umatrix/js/traffic.js"></script>
+<script src="umatrix/js/hntrie.js"></script>
+<script src="umatrix/js/utils.js"></script>
+<script src="umatrix/js/uritools.js"></script>
+<script src="umatrix/js/lz4.js"></script>
+<script src="umatrix/js/usersettings.js"></script>
+<script src="umatrix/js/matrix.js"></script>
+<script src="umatrix/js/recipe-manager.js"></script>
+<script src="umatrix/js/cachestorage.js"></script>
+<script src="umatrix/js/assets.js"></script>
+<script src="umatrix/js/filtering-context.js"></script>
+<script src="umatrix/js/httpsb.js"></script>
+<script src="umatrix/js/cookies.js"></script>
+<script src="umatrix/js/logger.js"></script>
+<script src="umatrix/js/messaging.js"></script>
+<script src="umatrix/js/storage.js"></script>
+<script src="umatrix/js/pagestats.js"></script>
+<script src="umatrix/js/tab.js"></script>
+<script src="umatrix/js/browsercache.js"></script>
+<script src="umatrix/js/start.js"></script>
+
+<!-- CanvasBlocker core (order load-bearing; unchanged from CanvasBlocker-master/manifest.json
+     background.scripts). -->
+<script src="canvasblocker/lib/require.js"></script>
+<script src="canvasblocker/lib/logging.js"></script>
+<script src="canvasblocker/lib/extension.js"></script>
+<script src="canvasblocker/lib/settingDefinitions.js"></script>
+<script src="canvasblocker/lib/settingContainers.js"></script>
+<script src="canvasblocker/lib/settingsMigration.js"></script>
+<script src="canvasblocker/lib/settings.js"></script>
+<script src="canvasblocker/lib/lists.js"></script>
+<script src="canvasblocker/lib/persistentRndStorage.js"></script>
+<script src="canvasblocker/lib/callingStack.js"></script>
+<script src="canvasblocker/lib/check.js"></script>
+<script src="canvasblocker/lib/dataUrls.js"></script>
+<script src="canvasblocker/lib/notification.js"></script>
+<script src="canvasblocker/lib/navigator.js"></script>
+<script src="canvasblocker/lib/mobile.js"></script>
+<script src="canvasblocker/lib/main.js"></script>
+
+<!-- Port Guard core: ES module, naturally scoped, no globals leak. Loaded last. -->
+<script type="module" src="portguard/background-entry.js"></script>
+</body>
+</html>

@@ -1,0 +1,2538 @@
+{
+	"addon_title": {
+		"message": "CanvasBlocker",
+		"description": ""
+	},
+	"addon_description": {
+		"message": "一部のJS APIを改変し、フィンガープリントを防ぎます。",
+		"description": ""
+	},
+	"browserAction_title_default": {
+		"message": "CanvasBlocker",
+		"description": ""
+	},
+	"browserAction_title_notified": {
+		"message": " \n\n保護に成功:",
+		"description": ""
+	},
+	"browserAction_title_whitelisted": {
+		"message": " ({url} のホワイトリストに登録されたAPI)",
+		"description": ""
+	},
+	"browserAction_title_protectedAPIs": {
+		"message": "\n  · {api}",
+		"description": ""
+	},
+	"browserAction_status_on": {
+		"message": "CanvasBlocker オン",
+		"description": ""
+	},
+	"browserAction_status_off": {
+		"message": "CanvasBlocker オフ",
+		"description": ""
+	},
+	"more": {
+		"message": "さらに表示",
+		"description": ""
+	},
+	"less": {
+		"message": "元に戻す",
+		"description": ""
+	},
+	"pleaseWait": {
+		"message": "お待ちください...",
+		"description": ""
+	},
+	"search": {
+		"message": "検索",
+		"description": ""
+	},
+	"ok": {
+		"message": "OK",
+		"description": ""
+	},
+	"apply": {
+		"message": "適用",
+		"description": ""
+	},
+	"cancel": {
+		"message": "キャンセル",
+		"description": ""
+	},
+	"input": {
+		"message": "入力",
+		"description": ""
+	},
+	"readout": {
+		"message": "読み取り",
+		"description": ""
+	},
+	"options": {
+		"message": "設定",
+		"description": ""
+	},
+	"options_title": {
+		"message": "CanvasBlockerの設定",
+		"description": ""
+	},
+	"optionsIntroduction": {
+		"message": "このページでは、CanvasBlockerの設定を調整できます。",
+		"description": ""
+	},
+	"installNotice": {
+		"message": "CanvasBlockerがインストールされました。将来的にこのページにアクセスしたい場合、ブックマークしてください。",
+		"description": ""
+	},
+	"updateNotice": {
+		"message": "CanvasBlockerが更新されました。将来的にこのページにアクセスしたいがまだブックマークしていない場合、ブックマークしてください。",
+		"description": ""
+	},
+	"dontShowOptionsOnUpdate": {
+		"message": "更新後に再び表示しない。",
+		"description": ""
+	},
+	"resistFingerprintingNotice": {
+		"message": "privacy.resistFingerprintが有効になっています。これはCanvasBlockerの動作をわずかに変更します。詳細は {link:ここ:https://github.com/kkapsner/CanvasBlocker/issues/158} と {link:ここ:https://github.com/ghacksuserjs/ghacks-user.js/issues/767} を参照してください。",
+		"description": ""
+	},
+	"settingsNotice.dom.webAudio.enabled": {
+		"message": "dom.webAudioが無効になっています。これを無効にする人はほとんどいないため、より追跡されやすくなります。",
+		"description": ""
+	},
+	"openInTab": {
+		"message": "別のタブで開く",
+		"description": ""
+	},
+	"labelForDefaultOption": {
+		"message": " (デフォルト)",
+		"description": ""
+	},
+	"group_general": {
+		"message": "一般",
+		"description": ""
+	},
+	"group_APIs": {
+		"message": "API",
+		"description": ""
+	},
+	"group_misc": {
+		"message": "その他",
+		"description": ""
+	},
+	"section_asking": {
+		"message": "確認",
+		"description": ""
+	},
+	"section_faking": {
+		"message": "偽装",
+		"description": ""
+	},
+	"section_notifications": {
+		"message": "通知",
+		"description": ""
+	},
+	"section_lists": {
+		"message": "リスト",
+		"description": ""
+	},
+	"section_misc": {
+		"message": "その他",
+		"description": ""
+	},
+	"section_settings": {
+		"message": "設定",
+		"description": ""
+	},
+	"section_canvas-api": {
+		"message": "Canvas API",
+		"description": ""
+	},
+	"section_audio-api": {
+		"message": "Audio API",
+		"description": ""
+	},
+	"section_history-api": {
+		"message": "History API",
+		"description": ""
+	},
+	"section_window-api": {
+		"message": "Window API",
+		"description": ""
+	},
+	"section_DOMRect-api": {
+		"message": "DOMRect API",
+		"description": ""
+	},
+	"section_SVG-api": {
+		"message": "SVG API",
+		"description": ""
+	},
+	"section_TextMetrics-api": {
+		"message": "TextMetrics API",
+		"description": ""
+	},
+	"section_Navigator-api": {
+		"message": "Navigator API",
+		"description": ""
+	},
+	"section_Screen-api": {
+		"message": "Screen API",
+		"description": ""
+	},
+	"displayAdvancedSettings_title": {
+		"message": "上級者モード",
+		"description": ""
+	},
+	"displayAdvancedSettings_description": {
+		"message": "追加の設定を表示します。",
+		"description": ""
+	},
+	"displayDescriptions_title": {
+		"message": "説明文を表示する",
+		"description": ""
+	},
+	"displayDescriptions_description": {
+		"message": "設定の説明文を表示します。",
+		"description": ""
+	},
+	"disruptSessionOnUpdate_title": {
+		"message": "更新時にセッションを中断する",
+		"description": ""
+	},
+	"disruptSessionOnUpdate_description": {
+		"message": "チェックを入れると、アップデートが利用可能になるとすぐに拡張機能が更新されます。現在開いているタブが壊れる可能性があります。",
+		"description": ""
+	},
+	"reloadExtension_title": {
+		"message": "拡張機能を再読み込みする",
+		"description": ""
+	},
+	"reloadExtension_description": {
+		"message": "保留中の更新を実行します。",
+		"description": ""
+	},
+	"reloadExtension_label": {
+		"message": "再読み込みする",
+		"description": ""
+	},
+	"hideSetting": {
+		"message": "ここをクリックしてこの設定を隠します。",
+		"description": ""
+	},
+	"displayHiddenSettings_title": {
+		"message": "隠されている設定を表示する",
+		"description": ""
+	},
+	"displayHiddenSettings_description": {
+		"message": "有効にすると隠されている設定が表示されます。",
+		"description": ""
+	},
+	"askForInvisiblePermission": {
+		"message": "見えない<canvas>を許可しますか？",
+		"description": ""
+	},
+	"askForInvisibleInputPermission": {
+		"message": "見えない<canvas>入力を許可しますか？",
+		"description": ""
+	},
+	"askForInvisibleReadoutPermission": {
+		"message": "見えない<canvas>読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForPermission": {
+		"message": "<canvas>を許可しますか？",
+		"description": ""
+	},
+	"askForInputPermission": {
+		"message": "<canvas>入力を許可しますか？",
+		"description": ""
+	},
+	"askForReadoutPermission": {
+		"message": "<canvas>読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForVisiblePermission": {
+		"message": "赤く囲った<canvas>を許可しますか？",
+		"description": ""
+	},
+	"askForVisibleInputPermission": {
+		"message": "赤く囲った<canvas>入力を許可しますか？",
+		"description": ""
+	},
+	"askForVisibleReadoutPermission": {
+		"message": "赤く囲った<canvas>読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForAudioPermission": {
+		"message": "audio APIを許可しますか？",
+		"description": ""
+	},
+	"askForAudioInputPermission": {
+		"message": "audio API入力を許可しますか？",
+		"description": ""
+	},
+	"askForAudioReadoutPermission": {
+		"message": "audio API読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForHistoryPermission": {
+		"message": "history APIを許可しますか？",
+		"description": ""
+	},
+	"askForHistoryInputPermission": {
+		"message": "history API入力を許可しますか？",
+		"description": ""
+	},
+	"askForHistoryReadoutPermission": {
+		"message": "history API読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForWindowPermission": {
+		"message": "window APIを許可しますか？",
+		"description": ""
+	},
+	"askForWindowInputPermission": {
+		"message": "window API入力を許可しますか？",
+		"description": ""
+	},
+	"askForWindowReadoutPermission": {
+		"message": "window API読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForDOMRectPermission": {
+		"message": "DOMRect APIを許可しますか？",
+		"description": ""
+	},
+	"askForDOMRectInputPermission": {
+		"message": "DOMRect API入力を許可しますか？",
+		"description": ""
+	},
+	"askForDOMRectReadoutPermission": {
+		"message": "DOMRect API読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForSVGPermission": {
+		"message": "SVG APIを許可しますか？",
+		"description": ""
+	},
+	"askForSVGInputPermission": {
+		"message": "SVG API入力を許可しますか？",
+		"description": ""
+	},
+	"askForSVGReadoutPermission": {
+		"message": "SVG API読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForTextMetricsPermission": {
+		"message": "TextMetrics APIを許可しますか？",
+		"description": ""
+	},
+	"askForTextMetricsInputPermission": {
+		"message": "TextMetrics API入力を許可しますか？",
+		"description": ""
+	},
+	"askForTextMetricsReadoutPermission": {
+		"message": "TextMetrics API読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForNavigatorPermission": {
+		"message": "navigator APIを許可しますか？",
+		"description": ""
+	},
+	"askForNavigatorInputPermission": {
+		"message": "navigator API入力を許可しますか？",
+		"description": ""
+	},
+	"askForNavigatorReadoutPermission": {
+		"message": "navigator API読み取りを許可しますか？",
+		"description": ""
+	},
+	"askForScreenPermission": {
+		"message": "screen APIを許可しますか？",
+		"description": ""
+	},
+	"askForScreenInputPermission": {
+		"message": "screen API入力を許可しますか？",
+		"description": ""
+	},
+	"askForScreenReadoutPermission": {
+		"message": "screen API読み取りを許可しますか？",
+		"description": ""
+	},
+	"askOnlyOnce_title": {
+		"message": "一度だけ確認する",
+		"description": ""
+	},
+	"askOnlyOnce_description": {
+		"message": "CanvasBlockerのブロックモードが「権限を求める」または「APIの読み取りの権限を求める」にセットされている場合、ページがAPIやAPI読み取りにアクセスしようとするたびに毎回確認メッセージが表示されます。この設定は、ページが何回APIにアクセスしようとしているかにかかわらず、各ページにつき一度のみ確認メッセージを表示しようとします。ただし、一部のページでは依然として複数の確認メッセージが表示される場合があります。\n\nなし: 毎回確認します\n\n個別: それぞれのAPIタイプ(内容、入力、読み取り) の確認は分離されます。\n\n共通: 全てのAPIが一緒に承認されます。",
+		"description": ""
+	},
+	"askOnlyOnce_options.no": {
+		"message": "なし",
+		"description": ""
+	},
+	"askOnlyOnce_options.individual": {
+		"message": "個別",
+		"description": ""
+	},
+	"askOnlyOnce_options.combined": {
+		"message": "共通",
+		"description": ""
+	},
+	"askDenyMode_title": {
+		"message": "要求拒否モード",
+		"description": ""
+	},
+	"askDenyMode_description": {
+		"message": "権限が拒否された場合、どのモードを使用するかを選択します。",
+		"description": ""
+	},
+	"askDenyMode_options.block": {
+		"message": "ブロック",
+		"description": ""
+	},
+	"askDenyMode_options.fake": {
+		"message": "偽装",
+		"description": ""
+	},
+	"showCanvasWhileAsking_title": {
+		"message": "canvasの内容を表示",
+		"description": ""
+	},
+	"showCanvasWhileAsking_description": {
+		"message": "可能な場合に、許可を求められているcanvasの内容を表示します。",
+		"description": ""
+	},
+	"showCanvasWhileAsking_message": {
+		"message": "このウェブページは以下のcanvasの内容を読み取ろうとしています:",
+		"description": ""
+	},
+	"blackList_description": {
+		"message": "常に全てのAPIをブロックしたいドメイン/URL。複数追加するには、コンマで区切ってください。",
+		"description": ""
+	},
+	"blackList_title": {
+		"message": "ブラックリスト",
+		"description": ""
+	},
+	"blockMode_description": {
+		"message": "",
+		"description": ""
+	},
+	"blockMode_urlSpecific": {
+		"message": "特定のウェブサイトに個別のブロックモードを設定するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、目的のブロックモードを選んでください。",
+		"description": ""
+	},
+	"blockMode_options.allowEverything": {
+		"message": "全て許可する",
+		"description": ""
+	},
+	"blockMode_options.block": {
+		"message": "ホワイトリストのみ許可する",
+		"description": ""
+	},
+	"blockMode_options.ask": {
+		"message": "権限を求める",
+		"description": ""
+	},
+	"blockMode_options.blockEverything": {
+		"message": "全てブロックする",
+		"description": ""
+	},
+	"blockMode_options.allow": {
+		"message": "ブラックリストのみブロックする",
+		"description": ""
+	},
+	"blockMode_options.fake": {
+		"message": "偽装",
+		"description": ""
+	},
+	"blockMode_title": {
+		"message": "ブロックモード",
+		"description": ""
+	},
+	"protectedCanvasPart_title": {
+		"message": "canvas APIの保護された部分",
+		"description": ""
+	},
+	"protectedCanvasPart_description": {
+		"message": "何もしない: canvas APIの機能は保護されません。\n\n読み取り: canvas APIの読み取り機能が保護されます。\n\n入力: canvas APIの入力機能が保護されます。ブロックモードが「偽装」の場合、文字を表示するときに描かれたピクセルはわずかに改変されます。これによりアドオンの検知が難しくなりますが、セキュリティは低下します。WebGL canvasの場合、挙動は「読み取り」モードと同じです。\n\n全て: 読み取りと入力の両方の機能が保護されます。ブロックモードが「偽装」の場合、検知される可能性が上がるためおすすめしません。",
+		"description": ""
+	},
+	"protectedCanvasPart_urlSpecific": {
+		"message": "特定のウェブサイトで個別のパーツを保護するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、目的のパーツを選んでください。",
+		"description": ""
+	},
+	"protectedCanvasPart_options.nothing": {
+		"message": "何もしない",
+		"description": ""
+	},
+	"protectedCanvasPart_options.input": {
+		"message": "入力",
+		"description": ""
+	},
+	"protectedCanvasPart_options.readout": {
+		"message": "読み取り",
+		"description": ""
+	},
+	"protectedCanvasPart_options.everything": {
+		"message": "全て",
+		"description": ""
+	},
+	"urlSettings_title": {
+		"message": "サイト固有の設定",
+		"description": ""
+	},
+	"urlSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"inputURL": {
+		"message": "ドメインまたは「正規表現」URLを入力",
+		"description": ""
+	},
+	"minFakeSize_description": {
+		"message": "この数値以下の範囲のcanvasは偽造されません。これは検知を防ぐためのパラメータです。\n注意: アドオンの安全性を低下させないよう、100を超える値にしないことを強く推奨します。",
+		"description": ""
+	},
+	"minFakeSize_title": {
+		"message": "最低偽装サイズ",
+		"description": ""
+	},
+	"maxFakeSize_description": {
+		"message": "この数値より大きい範囲のcanvasは偽造されません。(0にした場合は無効になります。) これはブラウザのフリーズを防ぐためのパフォーマンスパラメーターで、端末の計算能力に応じて調整してください。\n注意: アドオンの安全性を低下させないよう、1,000,000未満にしないことを強く推奨します。",
+		"description": ""
+	},
+	"maxFakeSize_title": {
+		"message": "最大偽装サイズ",
+		"description": ""
+	},
+	"rng_description": {
+		"message": "無し(真っ白): 真っ白な画像が返されます。「アルファチャンネルを偽装」オプションも同時に有効にしてください。注意: 「入力を偽装」モードと一緒に使用しないでください。\n\n非永続的: 偽装のたびに乱数が生成されます。多くのAPI保護では、検知を防ぐためにキャッシュが用意されていることに注意してください。\n\n定数: 「非永続的」とほとんど同じですが、canvasデータを変更すると、その後同じ色のピクセルが同じ色を共有します。\n\n永続: 乱数は各ドメインにつき一度だけ生成されます。",
+		"description": ""
+	},
+	"rng_options.persistent": {
+		"message": "永続",
+		"description": ""
+	},
+	"rng_options.constant": {
+		"message": "定数",
+		"description": ""
+	},
+	"rng_options.nonPersistent": {
+		"message": "非永続的",
+		"description": ""
+	},
+	"rng_options.white": {
+		"message": "無し(真っ白)",
+		"description": ""
+	},
+	"rng_title": {
+		"message": "乱数生成器",
+		"description": ""
+	},
+	"persistentRndStorage_title": {
+		"message": "永続ストレージ",
+		"description": ""
+	},
+	"persistentRndStorage_description": {
+		"message": "再起動後に使用するために、永続の乱数生成器のデータを保存します。",
+		"description": ""
+	},
+	"storePersistentRnd_title": {
+		"message": "永続データを保存する",
+		"description": ""
+	},
+	"storePersistentRnd_description": {
+		"message": "永続の乱数生成器のデータを保存するかどうか。オフの場合、ブラウザのシャットダウン時に破棄されます。",
+		"description": ""
+	},
+	"persistentRndClearInterval_title": {
+		"message": "永続データの削除間隔",
+		"description": ""
+	},
+	"persistentRndClearInterval_description": {
+		"message": "指定された間隔の後、永続データは自動で消去されます。(0にすると無効になります。)",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.seconds": {
+		"message": "秒",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.minutes": {
+		"message": "分",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.hours": {
+		"message": "時間",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.days": {
+		"message": "日",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.weeks": {
+		"message": "週間",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.months": {
+		"message": "ヶ月",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.years": {
+		"message": "年",
+		"description": ""
+	},
+	"clearPersistentRnd_title": {
+		"message": "永続のランダムストレージを消去する",
+		"description": ""
+	},
+	"clearPersistentRnd_description": {
+		"message": "永続の乱数生成器のデータを全て削除します。",
+		"description": ""
+	},
+	"clearPersistentRnd_label": {
+		"message": "消去する",
+		"description": ""
+	},
+	"clearPersistentRndForContainer_label": {
+		"message": "コンテナを消去する",
+		"description": ""
+	},
+	"clearPersistentRndForContainer_title": {
+		"message": "コンテナを選択する",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_title": {
+		"message": "ドメイン間で永続のランダムを共有する",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_description": {
+		"message": "注意: この設定により、ブラウザは100%追跡可能になり、あなたのプライバシーの脅威となります。",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_confirmMessage": {
+		"message": "本当にドメイン間で永続のランダムを共有してもよろしいですか？\n注意: これはブラウザを100%追跡可能にするため、プライバシーの脅威になります。",
+		"description": ""
+	},
+	"ignoreFrequentColors_title": {
+		"message": "最も頻繁な色を無視する",
+		"description": ""
+	},
+	"ignoreFrequentColors_description": {
+		"message": "キャンバスごとに偽装しない色の数。検知を防ぐためのパラメータです。\n注意: 画像ごとに色統計を計算する必要があるため、アドオンのパフォーマンスが低下することがあります。また、アドオンの安全性も低下することがあるので、この値を3より上に設定しないことを強くお勧めします。",
+		"description": ""
+	},
+	"minColors_title": {
+		"message": "最小色数",
+		"description": ""
+	},
+	"minColors_description": {
+		"message": "キャンバスを偽造する必要がある色の数。\n注意: アドオンの安全性が低下することがあるので、この値を10より上に設定しないことを強くお勧めします。",
+		"description": ""
+	},
+	"fakeAlphaChannel_title": {
+		"message": "アルファチャンネルを偽装する",
+		"description": ""
+	},
+	"fakeAlphaChannel_description": {
+		"message": "アルファチャンネル(透明度)の偽装を有効にします。",
+		"description": ""
+	},
+	"webGLVendor_title": {
+		"message": "報告されたwebGLベンダー",
+		"description": ""
+	},
+	"webGLVendor_description": {
+		"message": "「ベンダー」のwebGL関数「getParameter」で報告される値。特別な値:\n元の値を使用する場合は空のままにしておいてください。\n\n{undefined}: 未定義を返します (#508)\n\n{false}: booleanの値falseを返します (#508)\n\n{empty}: 空文字列を返します (#508)\n\n{disabled}: nullを返します (#508)\n\n{random vendor}: 組み込みリストからランダムなベンダーを返します (#493)\n\n{random renderer}: 組み込みリストからランダムなレンダラーを返します (#493)\n\n<xxx|yyy|zzz>: 与えられた選択肢xxx、yyy、zzzの中から1つ選びます (任意の個数のオプション) (#493)",
+		"description": ""
+	},
+	"webGLRenderer_title": {
+		"message": "報告されたwebGLレンダラー",
+		"description": ""
+	},
+	"webGLRenderer_description": {
+		"message": "「レンダラー」のwebGL関数「getParameter」で報告される値。特別な値:\n元の値を使用する場合は空のままにしておいてください。\n\n{undefined}: 未定義を返します (#508)\n\n{false}: booleanの値falseを返します (#508)\n\n{empty}: 空文字列を返します (#508)\n\n{disabled}: nullを返します (#508)\n\n{random vendor}: 組み込みリストからランダムなベンダーを返します (#493)\n\n{random renderer}: 組み込みリストからランダムなレンダラーを返します (#493)\n\n<xxx|yyy|zzz>: 与えられた選択肢xxx、yyy、zzzの中から1つ選びます (任意の個数のオプション) (#493)",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_title": {
+		"message": "報告されたwebGLのマスクされていないベンダー",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_description": {
+		"message": "「マスクされていないベンダー」のwebGL関数「getParameter」で報告される値。特別な値:\n元の値を使用する場合は空のままにしておいてください。\n\n{undefined}: 未定義を返します (#508)\n\n{false}: booleanの値falseを返します (#508)\n\n{empty}: 空文字列を返します (#508)\n\n{disabled}: nullを返します (#508)\n\n{random vendor}: 組み込みリストからランダムなベンダーを返します (#493)\n\n{random renderer}: 組み込みリストからランダムなレンダラーを返します (#493)\n\n<xxx|yyy|zzz>: 与えられた選択肢xxx、yyy、zzzの中から1つ選びます (任意の個数のオプション) (#493)",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_title": {
+		"message": "報告されたwebGLのマスクされていないレンダラー",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_description": {
+		"message": "「マスクされていないレンダラー」のwebGL関数「getParameter」で報告される値。特別な値:\n元の値を使用する場合は空のままにしておいてください。\n\n{undefined}: 未定義を返します (#508)\n\n{false}: booleanの値falseを返します (#508)\n\n{empty}: 空文字列を返します (#508)\n\n{disabled}: nullを返します (#508)\n\n{random vendor}: 組み込みリストからランダムなベンダーを返します (#493)\n\n{random renderer}: 組み込みリストからランダムなレンダラーを返します (#493)\n\n<xxx|yyy|zzz>: 与えられた選択肢xxx、yyy、zzzの中から1つ選びます (任意の個数のオプション) (#493)",
+		"description": ""
+	},
+	"useCanvasCache_title": {
+		"message": "canvasのキャッシュを使用",
+		"description": ""
+	},
+	"useCanvasCache_description": {
+		"message": "Canvasのキャッシュを有効にします。これにより検知を防ぎ、小さなcanvasが複数回読み取られたときのパフォーマンスが向上しますが、大きなcanvasの場合はパフォーマンスが低下します。",
+		"description": ""
+	},
+	"protectedAPIFeatures_title": {
+		"message": "保護されたAPI機能",
+		"description": ""
+	},
+	"protectedAPIFeatures_description": {
+		"message": "保護されたAPI機能の一覧。チェックボックスをオフにすると、APIの機能は保護されなくなります。",
+		"description": ""
+	},
+	"disableNotifications": {
+		"message": "通知を無効にする",
+		"description": ""
+	},
+	"showOptions": {
+		"message": "表示設定",
+		"description": ""
+	},
+	"displayCallingStack": {
+		"message": "コールスタックを表示する",
+		"description": ""
+	},
+	"displayFullURL": {
+		"message": "フルURLを表示する",
+		"description": ""
+	},
+	"enableStackList_description": {
+		"message": "",
+		"description": ""
+	},
+	"enableStackList_title": {
+		"message": "ファイル固有のホワイトリストを使う",
+		"description": ""
+	},
+	"preBlock": {
+		"message": "CanvasBlockerの設定が時間内にロードされなかったため、 APIが{url} でブロックされました。",
+		"description": ""
+	},
+	"blocked": {
+		"message": "{url} でAPIがブロックされました。",
+		"description": ""
+	},
+	"fakedReadout": {
+		"message": "{url} でcanvasの読み取りを偽装しました",
+		"description": ""
+	},
+	"fakedAudioReadout": {
+		"message": "{url} でaudioの読み取りを偽装しました",
+		"description": ""
+	},
+	"fakedHistoryReadout": {
+		"message": "{url} でhistoryの読み取りを偽装しました",
+		"description": ""
+	},
+	"fakedWindowReadout": {
+		"message": "{url} でwindowの読み取りを偽装しました",
+		"description": ""
+	},
+	"fakedDOMRectReadout": {
+		"message": "{url} でDOMRectの読み取りを偽装しました",
+		"description": ""
+	},
+	"fakedSVGReadout": {
+		"message": "{url} でSVGの読み取りを偽装しました",
+		"description": ""
+	},
+	"fakedTextMetricsReadout": {
+		"message": "{url} でTextMetricsの読み取りを偽装しました",
+		"description": ""
+	},
+	"fakedNavigatorReadout": {
+		"message": "{url} でnavigatorの読み取りを偽装しました",
+		"description": ""
+	},
+	"fakedScreenReadout": {
+		"message": "{url} でscreenの読み取りを偽装しました",
+		"description": ""
+	},
+	"fakedInput": {
+		"message": "{url} で入力を偽装しました",
+		"description": ""
+	},
+	"ignoreList_description": {
+		"message": "通知を表示しないドメイン/URL。複数追加するには、コンマで区切ってください。",
+		"description": ""
+	},
+	"ignoreList_title": {
+		"message": "無視リスト",
+		"description": ""
+	},
+	"ignoredAPIs_title": {
+		"message": "無視されるAPI",
+		"description": ""
+	},
+	"ignoredAPIs_description": {
+		"message": "選択したAPIに対する通知は表示されません。",
+		"description": ""
+	},
+	"localFile": {
+		"message": "ローカルファイル",
+		"description": ""
+	},
+	"ignorelistDomain": {
+		"message": "サイレントドメイン",
+		"description": ""
+	},
+	"ignorelistURL": {
+		"message": "URLを無視する",
+		"description": ""
+	},
+	"selectIgnore": {
+		"message": "無視リストに追加するドメインまたはURLを選択:",
+		"description": ""
+	},
+	"inputIgnore": {
+		"message": "無視リストに追加するドメインまたは「正規表現」URLを入力:",
+		"description": ""
+	},
+	"inputIgnoreDomain": {
+		"message": "無視リストに追加するドメインを入力:",
+		"description": ""
+	},
+	"inputIgnoreURL": {
+		"message": "無視リストに追加する「正規表現」URLを入力",
+		"description": ""
+	},
+	"selectWhitelist": {
+		"message": "ホワイトリストに追加するドメインまたはURLを選択:",
+		"description": ""
+	},
+	"inputWhitelist": {
+		"message": "ホワイトリストに追加するドメインまたは「正規表現」URLを入力:",
+		"description": ""
+	},
+	"inputWhitelistDomain": {
+		"message": "ホワイトリストに追加するドメインを入力:",
+		"description": ""
+	},
+	"inputWhitelistURL": {
+		"message": "ホワイトリストに追加する「正規表現」URLを入力",
+		"description": ""
+	},
+	"selectSessionWhitelist": {
+		"message": "セッションホワイトリストに追加するドメインまたはURLを選択",
+		"description": ""
+	},
+	"inputSessionWhitelist": {
+		"message": "セッションホワイトリストに追加するドメインまたは「正規表現」URLを入力:",
+		"description": ""
+	},
+	"inputSessionWhitelistDomain": {
+		"message": "セッションホワイトリストに追加するドメインを入力:",
+		"description": ""
+	},
+	"inputSessionWhitelistURL": {
+		"message": "セッションホワイトリストに追加する「正規表現」URLを入力:",
+		"description": ""
+	},
+	"selectWhitelistScope": {
+		"message": "ホワイトリストの有効範囲は？",
+		"description": ""
+	},
+	"selectWhitelistType": {
+		"message": "ホワイトリストのタイプは？",
+		"description": ""
+	},
+	"whitelistOnlyAPI": {
+		"message": "{api} のみホワイトリスト",
+		"description": ""
+	},
+	"whitelistAllAPIs": {
+		"message": "全てのAPIをホワイトリストに入れる",
+		"description": ""
+	},
+	"settings": {
+		"message": "設定",
+		"description": ""
+	},
+	"showCallingFile_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCallingFile_title": {
+		"message": "コール中のファイルを表示",
+		"description": ""
+	},
+	"showCompleteCallingStack_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCompleteCallingStack_title": {
+		"message": "完全なコールスタックを表示",
+		"description": ""
+	},
+	"showNotifications_description": {
+		"message": "何かがブロック/偽装されたときに、アドレスバーに通知アイコンを表示します。",
+		"description": ""
+	},
+	"showNotifications_urlSpecific": {
+		"message": "特定のウェブサイトで通知を無効にするには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"showNotifications_title": {
+		"message": "通知アイコンを表示する",
+		"description": ""
+	},
+	"highlightPageAction_description": {
+		"message": "視認性を向上させるため、ページアクションアイコンを強調表示します。",
+		"description": ""
+	},
+	"highlightPageAction_urlSpecific": {
+		"message": "",
+		"description": ""
+	},
+	"highlightPageAction_title": {
+		"message": "ページアクションアイコンを強調表示する",
+		"description": ""
+	},
+	"highlightPageAction_options.none": {
+		"message": "ハイライトなし",
+		"description": ""
+	},
+	"highlightPageAction_options.color": {
+		"message": "色",
+		"description": ""
+	},
+	"highlightPageAction_options.blink": {
+		"message": "点滅する",
+		"description": ""
+	},
+	"displayBadge_description": {
+		"message": "",
+		"description": ""
+	},
+	"displayBadge_title": {
+		"message": "バッジを表示する",
+		"description": ""
+	},
+	"highlightBrowserAction_description": {
+		"message": "",
+		"description": ""
+	},
+	"highlightBrowserAction_urlSpecific": {
+		"message": "",
+		"description": ""
+	},
+	"highlightBrowserAction_title": {
+		"message": "通知時にツールバーのアイコンを変更",
+		"description": ""
+	},
+	"highlightBrowserAction_options.none": {
+		"message": "何も変更しない",
+		"description": ""
+	},
+	"highlightBrowserAction_options.color": {
+		"message": "色を変更する",
+		"description": ""
+	},
+	"highlightBrowserAction_options.blink": {
+		"message": "点滅する",
+		"description": ""
+	},
+	"sourceOutput": {
+		"message": "コール中のファイル",
+		"description": ""
+	},
+	"stackEntryOutput": {
+		"message": "{url}, {line}行, {column}列",
+		"description": ""
+	},
+	"stackList_description": {
+		"message": "全てのAPIの使用が許可されたJSファイル。入力はJSON形式である必要があります。例: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"description": ""
+	},
+	"stackList_title": {
+		"message": "ファイル固有のホワイトリスト",
+		"description": ""
+	},
+	"whiteList_title": {
+		"message": "ホワイトリスト",
+		"description": ""
+	},
+	"whiteList_description": {
+		"message": "全てのAPIの使用を許可するドメイン/URL。複数追加するには、コンマで区切ってください。",
+		"description": ""
+	},
+	"whitelist": {
+		"message": "ホワイトリスト",
+		"description": ""
+	},
+	"whitelistDomain": {
+		"message": "ホワイトリストドメイン",
+		"description": ""
+	},
+	"whitelistURL": {
+		"message": "ホワイトリストURL",
+		"description": ""
+	},
+	"ignorelist": {
+		"message": "無視する",
+		"description": ""
+	},
+	"whitelistTemporarily": {
+		"message": "一時的なホワイトリスト",
+		"description": ""
+	},
+	"inspectWhitelist": {
+		"message": "ホワイトリストを調査する",
+		"description": ""
+	},
+	"sessionWhiteList_title": {
+		"message": "セッションのホワイトリスト",
+		"description": ""
+	},
+	"sessionWhiteList_description": {
+		"message": "このセッションの間、全てのAPIの使用を許可するドメイン/URL (つまり、一時的なホワイトリスト)。複数追加するには、コンマで区切ってください。",
+		"description": ""
+	},
+	"sessionWhiteList_search": {
+		"message": "一時的",
+		"description": ""
+	},
+	"whitelistDomainTemporarily": {
+		"message": "一時的なドメインのホワイトリスト",
+		"description": ""
+	},
+	"whitelistURLTemporarily": {
+		"message": "一時的なURLのホワイトリスト",
+		"description": ""
+	},
+	"storeNotificationData_title": {
+		"message": "通知の詳細データを保存する",
+		"description": ""
+	},
+	"storeNotificationData_description": {
+		"message": "",
+		"description": ""
+	},
+	"storeImageForInspection_title": {
+		"message": "調査用に画像を保存する",
+		"description": ""
+	},
+	"storeImageForInspection_description": {
+		"message": "偽装されたcanvasの内容の保存を有効にします。\n注意: メモリ消費量が多くなる可能性があります。",
+		"description": ""
+	},
+	"protectAudio_title": {
+		"message": "audio APIを保護する",
+		"description": ""
+	},
+	"protectAudio_description": {
+		"message": "audio APIを保護するかどうか",
+		"description": ""
+	},
+	"protectAudio_urlSpecific": {
+		"message": "特定のウェブサイトを保護から除外するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"audioFakeRate_title": {
+		"message": "バッファ偽装率",
+		"description": ""
+	},
+	"audioFakeRate_description": {
+		"message": "読み取りリクエスト1回あたり、いくつの値を偽装するか。",
+		"description": ""
+	},
+	"audioFakeRate_options.1": {
+		"message": "1個の値",
+		"description": ""
+	},
+	"audioFakeRate_options.10": {
+		"message": "10個の値",
+		"description": ""
+	},
+	"audioFakeRate_options.100": {
+		"message": "100個の値",
+		"description": ""
+	},
+	"audioFakeRate_options.1000": {
+		"message": "1000個の値",
+		"description": ""
+	},
+	"audioFakeRate_options.0.1%": {
+		"message": "0.1%の値",
+		"description": ""
+	},
+	"audioFakeRate_options.1%": {
+		"message": "1%の値",
+		"description": ""
+	},
+	"audioFakeRate_options.10%": {
+		"message": "10%の値",
+		"description": ""
+	},
+	"audioFakeRate_options.100%": {
+		"message": "100%の値",
+		"description": ""
+	},
+	"audioNoiseLevel_title": {
+		"message": "ノイズレベル",
+		"description": ""
+	},
+	"audioNoiseLevel_description": {
+		"message": "",
+		"description": ""
+	},
+	"audioNoiseLevel_options.minimal": {
+		"message": "最小",
+		"description": ""
+	},
+	"audioNoiseLevel_options.low": {
+		"message": "低",
+		"description": ""
+	},
+	"audioNoiseLevel_options.medium": {
+		"message": "中",
+		"description": ""
+	},
+	"audioNoiseLevel_options.high": {
+		"message": "高",
+		"description": ""
+	},
+	"audioNoiseLevel_options.maximal": {
+		"message": "最大",
+		"description": ""
+	},
+	"useAudioCache_title": {
+		"message": "オーディオキャッシュを使用する",
+		"description": ""
+	},
+	"useAudioCache_description": {
+		"message": "オーディオキャッシュを有効にします。これにより検知を防げますが、パフォーマンスが低下する可能性があります。",
+		"description": ""
+	},
+	"useAudioCache_urlSpecific": {
+		"message": "一部のページでは、Firefoxの動作が遅くなるような、非常に不十分な書き込みのオーディオフィンガープリンティングスクリプトが使われています。 特定のウェブサイトのキャッシュを無効にするには、黒い矢印をクリックしてメニューを開き、 「+」をクリックしてドメイン/URLを追加し、チェックマークを外してください。",
+		"description": ""
+	},
+	"audioUseFixedIndices_title": {
+		"message": "固定のインデックスを使用する",
+		"description": ""
+	},
+	"audioUseFixedIndices_description": {
+		"message": "使用されるインデックスの一部を常に偽装するかどうか。",
+		"description": ""
+	},
+	"audioFixedIndices_title": {
+		"message": "固定のインデックス",
+		"description": ""
+	},
+	"audioFixedIndices_description": {
+		"message": "常に偽装されるインデックス。複数のエントリを追加するには、コンマで区切ってください。",
+		"description": ""
+	},
+	"historyLengthThreshold_title": {
+		"message": "履歴の長さの閾値",
+		"description": ""
+	},
+	"historyLengthThreshold_description": {
+		"message": "ウェブサイトに報告される履歴の最大の長さ。",
+		"description": ""
+	},
+	"historyLengthThreshold_urlSpecific": {
+		"message": "特定のウェブサイトでこの値を変更するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、異なる値をセットしてください。",
+		"description": ""
+	},
+	"protectWindow_title": {
+		"message": "window APIを保護する",
+		"description": ""
+	},
+	"protectWindow_description": {
+		"message": "window.openerとwindow.nameが保護されます。一部のWebページは使用できなくなる可能性があります。",
+		"description": ""
+	},
+	"protectWindow_urlSpecific": {
+		"message": "特定のウェブサイトを保護から除外するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"protectWindow_askReCaptchaException": {
+		"message": "window APIを保護するとreCAPTHCAが動作しなくなります。再び機能させるため、埋め込まれたページでwindow.name APIを許可しますか？",
+		"description": ""
+	},
+	"allowWindowNameInFrames_title": {
+		"message": "フレーム内のwindow.nameを許可する",
+		"description": ""
+	},
+	"allowWindowNameInFrames_description": {
+		"message": "window.name APIは埋め込まれたページのコンテキストではそれほど危険ではなく、正当な理由で使用されます(reCAPTCHAなど)。この設定では、これらの使用が許可されます。",
+		"description": ""
+	},
+	"allowWindowNameInFrames_urlSpecific": {
+		"message": "特定のウェブサイトでのみこれを許可するには、、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークをつけてください。",
+		"description": ""
+	},
+	"protectDOMRect_title": {
+		"message": "DOMRect APIを保護する",
+		"description": ""
+	},
+	"protectDOMRect_description": {
+		"message": "これにより、\"getClientRects()\"フィンガープリンティングおよびいくつかの類似した手法から保護されます。",
+		"description": ""
+	},
+	"protectDOMRect_urlSpecific": {
+		"message": "特定のウェブサイトを保護から除外するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"domRectIntegerFactor_title": {
+		"message": "DOMRect 整数係数",
+		"description": ""
+	},
+	"domRectIntegerFactor_description": {
+		"message": "ピクセルの一部をCSSで制御することができます。 検知を防ぐために、この係数に掛け算したDOMRectの値が整数である場合は変更されません。",
+		"description": ""
+	},
+	"protectSVG_title": {
+		"message": "SVG APIを保護する",
+		"description": ""
+	},
+	"protectSVG_description": {
+		"message": "SVG を使用したフィンガープリントから保護します。",
+		"description": ""
+	},
+	"protectSVG_urlSpecific": {
+		"message": "特定のウェブサイトを保護から除外するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"protectTextMetrics_title": {
+		"message": "TextMetrics APIを保護する",
+		"description": ""
+	},
+	"protectTextMetrics_description": {
+		"message": "DOMRectの値を検証するために使用できる「measureText()」フィンガープリントから保護します。",
+		"description": ""
+	},
+	"protectTextMetrics_urlSpecific": {
+		"message": "特定のウェブサイトを保護から除外するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"protectNavigator_title": {
+		"message": "navigator APIを保護する",
+		"description": ""
+	},
+	"protectNavigator_description": {
+		"message": "このページではnavigator APIの変更が許可されています。この保護を有効にしても、デフォルトでは何も変更されません。navigatorの設定を開き、そこで必要な変更を指定してください。",
+		"description": ""
+	},
+	"protectNavigator_urlSpecific": {
+		"message": "特定のウェブサイトを保護から除外するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"openNavigatorSettings_title": {
+		"message": "Navigatorの設定",
+		"description": ""
+	},
+	"openNavigatorSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"openNavigatorSettings_label": {
+		"message": "開く",
+		"description": ""
+	},
+	"navigatorSettings_title": {
+		"message": "CanvasBlocker navigatorの設定",
+		"description": ""
+	},
+	"navigatorSettings_description": {
+		"message": "このページでnavigatorの設定ができます。プリセットを使用する場合は、常にオペレーティングシステムとブラウザーのプリセットを使用する必要があります。 後からも変更できます。",
+		"description": ""
+	},
+	"navigatorSettings_disclaimer": {
+		"message": "注意: 使用している実際のブラウザは、それを検出する多くの方法があるため、完全に偽造することはできません。 例えば、機能テストやブラウザ固有のHTML要素のレンダリングでは常に情報漏れが発生します。",
+		"description": ""
+	},
+	"navigatorSettings_contextualIdentities": {
+		"message": "コンテナ {select} の設定が表示されています。",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.os": {
+		"message": "オペレーティングシステムのプリセット",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.browser": {
+		"message": "ブラウザーのプリセット",
+		"description": ""
+	},
+	"navigatorSettings_values": {
+		"message": "Navigatorの値",
+		"description": ""
+	},
+	"navigatorSettings_reset": {
+		"message": "リセットする",
+		"description": ""
+	},
+	"protectScreen_title": {
+		"message": "screen APIを保護する",
+		"description": ""
+	},
+	"protectScreen_description": {
+		"message": "画面サイズを含むフィンガープリントの試みから保護します。",
+		"description": ""
+	},
+	"protectScreen_urlSpecific": {
+		"message": "特定のウェブサイトを保護から除外するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"screenSize_title": {
+		"message": "画面サイズ",
+		"description": ""
+	},
+	"screenSize_description": {
+		"message": "これが 「...x...」 という値で設定されている場合、指定された寸法が画面サイズとして報告されます。",
+		"description": ""
+	},
+	"screenSize_urlSpecific": {
+		"message": "特定のウェブサイトに特定のサイズを提供するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、希望する値を入力してください。",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_title": {
+		"message": "画面サイズの偽装の最低値",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_description": {
+		"message": "次のセットの中で、ウィンドウの内側の寸法にフィットする最小のスクリーンサイズを使用します。画面サイズ: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_urlSpecific": {
+		"message": "特定のウェブサイトを偽装から除外するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"theme_title": {
+		"message": "テーマ",
+		"description": ""
+	},
+	"theme_description": {
+		"message": "システムがダークテーマを使用している場合、自動的にダークテーマに切り替わります。(Firefox 67以降が必要です)",
+		"description": ""
+	},
+	"theme_options.auto": {
+		"message": "自動",
+		"description": ""
+	},
+	"theme_options.default": {
+		"message": "デフォルト",
+		"description": ""
+	},
+	"theme_options.light": {
+		"message": "ライト",
+		"description": ""
+	},
+	"theme_options.dark": {
+		"message": "ダーク",
+		"description": ""
+	},
+	"theme_options.colorful": {
+		"message": "カラフル",
+		"description": ""
+	},
+	"theme_options.none": {
+		"message": "なし",
+		"description": ""
+	},
+	"blockDataURLs_title": {
+		"message": "データURLページをブロックする",
+		"description": ""
+	},
+	"blockDataURLs_description": {
+		"message": "データ URL ページをフィンガープリンティングから保護することはできません (https://bugzilla.mozilla.org/show_bug.cgi?id=1475831を参照してください) 。それらをブロックすると、本物のフィンガープリントがサーバーに到達するのを防ぎます。",
+		"description": ""
+	},
+	"blockDataURLs_urlSpecific": {
+		"message": "特定のウェブサイトを保護から除外するには、黒い矢印をクリックしてメニューを開き、「+」をクリックしてドメイン/URLを追加して、チェックマークを外してください。",
+		"description": ""
+	},
+	"showReleaseNotes_title": {
+		"message": "リリースノート",
+		"description": ""
+	},
+	"showReleaseNotes_description": {
+		"message": "",
+		"description": ""
+	},
+	"showReleaseNotes_label": {
+		"message": "表示する",
+		"description": ""
+	},
+	"logLevel_title": {
+		"message": "ログレベル",
+		"description": ""
+	},
+	"logLevel_description": {
+		"message": "エラーの原因を見つけるためには、アドオンのアクティビティの詳細な記録が役に立ちます。このパラメータは記録の詳細さを制御します。\n\nログはブラウザコンソール(Ctrl+Shift+J) およびウェブコンソール(Ctrl+Shift+K) で確認できます。",
+		"description": ""
+	},
+	"logLevel_options.0": {
+		"message": "なし",
+		"description": ""
+	},
+	"logLevel_options.1": {
+		"message": "エラー",
+		"description": ""
+	},
+	"logLevel_options.25": {
+		"message": "警告",
+		"description": ""
+	},
+	"logLevel_options.50": {
+		"message": "メッセージ",
+		"description": ""
+	},
+	"logLevel_options.75": {
+		"message": "通知",
+		"description": ""
+	},
+	"logLevel_options.100": {
+		"message": "詳細",
+		"description": ""
+	},
+	"exportSettings_title": {
+		"message": "CanvasBlockerの設定をエクスポート",
+		"description": ""
+	},
+	"exportSettings_description": {
+		"message": "これにより、現在の設定をコピーできます。ここに貼り付けて変更することもできます。不正なデータがある場合、テキストエリアの背景が赤くなり、変更は保存されません。",
+		"description": ""
+	},
+	"settingControlling_title": {
+		"message": "設定のコントロール",
+		"description": ""
+	},
+	"settingControlling_description": {
+		"message": "",
+		"description": ""
+	},
+	"openSettingSanitation_label": {
+		"message": "設定の整理",
+		"description": ""
+	},
+	"inspectWhitelist_label": {
+		"message": "ホワイトリストを調査する",
+		"description": ""
+	},
+	"openSettingPresets_title": {
+		"message": "プリセット",
+		"description": ""
+	},
+	"openSettingPresets_description": {
+		"message": "インストール時に表示されたプリセットページを開きます。プリセットは、CanvasBlockerの一般的なユースケースの設定値のコレクションです。",
+		"description": ""
+	},
+	"openSettingPresets_label": {
+		"message": "開く",
+		"description": ""
+	},
+	"inspectSettings_label": {
+		"message": "調査する",
+		"description": ""
+	},
+	"saveSettings_label": {
+		"message": "保存する",
+		"description": ""
+	},
+	"loadSettings_label": {
+		"message": "読み込む",
+		"description": ""
+	},
+	"resetSettings_title": {
+		"message": "設定をリセットする",
+		"description": ""
+	},
+	"resetSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"resetSettings_label": {
+		"message": "リセットする",
+		"description": ""
+	},
+	"resetSettings_confirm": {
+		"message": "すべての設定をリセットしてもよろしいですか？",
+		"description": ""
+	},
+	"browserAction_settings": {
+		"message": "設定",
+		"description": ""
+	},
+	"browserAction_faq": {
+		"message": "FAQ",
+		"description": ""
+	},
+	"browserAction_test": {
+		"message": "テスト",
+		"description": ""
+	},
+	"browserAction_review": {
+		"message": "レビュー",
+		"description": ""
+	},
+	"browserAction_reportIssue": {
+		"message": "問題を報告する",
+		"description": ""
+	},
+	"sanitation_title": {
+		"message": "設定の整理",
+		"description": ""
+	},
+	"sanitation_description": {
+		"message": "このページは、CanvasBlockerの設定の間違いを見つけるのに役立ちます。最適でない設定についてもアドバイスを提供しますが、すべての提案を盲目的に修正することは推奨されません。",
+		"description": ""
+	},
+	"sanitation_nothingToComplain": {
+		"message": "文句なし。",
+		"description": ""
+	},
+	"sanitation_ruleset.unnecessaryURLValue": {
+		"message": "不要なURL値",
+		"description": ""
+	},
+	"sanitation_ruleset.disabledFeatures": {
+		"message": "無効な機能",
+		"description": ""
+	},
+	"sanitation_ruleset.blockMode": {
+		"message": "ブロックモード",
+		"description": ""
+	},
+	"sanitation_ruleset.thresholds": {
+		"message": "閾値",
+		"description": ""
+	},
+	"sanitation_ruleset.performance": {
+		"message": "パフォーマンス",
+		"description": ""
+	},
+	"sanitation_ruleset.privacy": {
+		"message": "プライバシー",
+		"description": ""
+	},
+	"sanitation_error.unnecessaryURLValue": {
+		"message": "「{url}」のURL値は、「{setting-title}」のグローバル設定と同じです。",
+		"description": ""
+	},
+	"sanitation_resolution.removeURLValue": {
+		"message": "URL値を削除する",
+		"description": ""
+	},
+	"sanitation_error.disabledFeatures": {
+		"message": "{api}の全ての機能は無効になっていますが、保護は有効です。",
+		"description": ""
+	},
+	"sanitation_error.disabledSomeFeatures": {
+		"message": "{api}のいくつかの機能が無効になっています。これはテストのためか、あるいはその機能が何をしているか本当に理解している場合にのみ行うべきです。",
+		"description": ""
+	},
+	"sanitation_resolution.disableMainFlag": {
+		"message": "メインフラグを無効にする",
+		"description": ""
+	},
+	"sanitation_resolution.enableFeatures": {
+		"message": "機能を有効にする",
+		"description": ""
+	},
+	"sanitation_error.badBlockMode": {
+		"message": "「偽装」または「確認」ブロックモードを使用することをお勧めします。",
+		"description": ""
+	},
+	"sanitation_resolution.switchToFake": {
+		"message": "「偽装」に切り替える",
+		"description": ""
+	},
+	"sanitation_error.blockModeVsProtection": {
+		"message": "ブロッキングモード「{blockMode}」では、{api}保護が機能しません。",
+		"description": ""
+	},
+	"sanitation_resolution.disableFlag": {
+		"message": "「{flag}」を無効にする",
+		"description": ""
+	},
+	"sanitation_error.fakeInputWithWhiteRng": {
+		"message": "「{blockMode}」や「{protectedCanvasPart}」保護と一緒に白色乱数生成器を使用しないでください。",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectReadout": {
+		"message": "読み取りの保護に切り替える",
+		"description": ""
+	},
+	"sanitation_resolution.switchToNonPersistentRng": {
+		"message": "「非永続的」乱数生成器に切り替える",
+		"description": ""
+	},
+	"sanitation_error.fakeEverythingInCanvas": {
+		"message": "ブロックモード「{protectedCanvasPart}」で保護「{blockMode}」を使用しないでください。",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectInput": {
+		"message": "入力の保護に切り替える",
+		"description": ""
+	},
+	"sanitation_error.valueTooLow": {
+		"message": "「{setting}」は、{value}より小さくすべきではありません。",
+		"description": ""
+	},
+	"sanitation_error.valueTooHigh": {
+		"message": "「{setting}」は、{value}より大きくすべきではありません。",
+		"description": ""
+	},
+	"sanitation_resolution.setTo": {
+		"message": "{value}に設定する",
+		"description": ""
+	},
+	"sanitation_error.storeNotificationData": {
+		"message": "通知データを保存すると、パフォーマンスが低下することがあります。",
+		"description": ""
+	},
+	"sanitation_error.storeImage": {
+		"message": "調査用の画像を保存すると、RAMのフットプリントが増加します。",
+		"description": ""
+	},
+	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
+		"message": "ドメイン間で永続のランダムを共有しないでください。これはブラウザを100%追跡可能にします。",
+		"description": ""
+	},
+	"sanitation_error.customScreenSize": {
+		"message": "カスタムスクリーンサイズを使用しないでください。これはブラウザをトラッキングしやすくします。",
+		"description": ""
+	},
+	"whitelist_inspection_title": {
+		"message": "CanvasBlockerのホワイトリスト調査",
+		"description": ""
+	},
+	"whitelist_inspection_description": {
+		"message": "特定のサイトでどのフィンガープリント保護が有効であるかを表示します。{newline}{newline}チェックが入っていない場合は、サイトがその機能を改変されていない方法で使用できることを示します。つまり、それを使用して(部分的に)あなたのブラウザーのフィンガープリントを作成することができます。{newline}チェックが入っている場合は、CanvasBlockerが保護を提供しており、サイトがあなたを一意に識別することが難しくなっていることを示します。",
+		"description": ""
+	},
+	"whitelist_all_apis": {
+		"message": "全てのAPI",
+		"description": ""
+	},
+	"presets": {
+		"message": "プリセット",
+		"description": ""
+	},
+	"presets_title": {
+		"message": "CanvasBlockerのプリセット",
+		"description": ""
+	},
+	"presets_installNotice": {
+		"message": "{image:../icons/icon.svg}CanvasBlockerをインストールしていただき、ありがとうございます。ニーズに合わせるため、プリセットを適用できます。さらにカスタマイズするためには、{link:オプション:options.html} ページを開いてください。このプリセットページは後からでも開けます。",
+		"description": ""
+	},
+	"presets_introduction": {
+		"message": "これらは、さまざまな人のニーズに合わせた設定プリセットです。かっこ内の値は、現在の設定の状態です。 複数のプリセットを同時に適用することはできますが、いくつかの設定は後で適用されることによって上書きされる可能性があります。",
+		"description": ""
+	},
+	"preset_default_title": {
+		"message": "デフォルト設定",
+		"description": ""
+	},
+	"preset_default_description": {
+		"message": "特別な設定は適用されません。",
+		"description": ""
+	},
+	"preset_convenience_title": {
+		"message": "便利な設定",
+		"description": ""
+	},
+	"preset_convenience_description": {
+		"message": "いくつかの設定を適用してブラウジング体験をできるだけ便利にします。これにはいくつかのサイトをホワイトリストに登録することが含まれます。",
+		"description": ""
+	},
+	"preset_stealth_title": {
+		"message": "ステルス設定",
+		"description": ""
+	},
+	"preset_stealth_description": {
+		"message": "CanvasBlockerを検知するのが難しいように設定します。これによりCPU使用率が高くなったり、ブラウザが遅くなったりするかもしれません。",
+		"description": ""
+	},
+	"preset_max_protection_title": {
+		"message": "最大限の保護",
+		"description": ""
+	},
+	"preset_max_protection_description": {
+		"message": "フィンガープリント採取に対する保護を最大化します。これらの設定は、一部のページを破壊したり、ブラウザを少し遅くしたり、サイトがCanvasBlockerの使用を検知することを可能にしたりするかもしれません。このプリセットを適用した後、reCAPTCHA プリセットも適用することを検討する必要があります。",
+		"description": ""
+	},
+	"preset_recaptcha_title": {
+		"message": "reCAPTCHAの例外",
+		"description": ""
+	},
+	"preset_recaptcha_description": {
+		"message": "Window APIを保護するとreCAPTHCAが動作しなくなります。このプリセットを使用すると、埋め込まれたページで window.name API を使用することができ、再び機能します。",
+		"description": ""
+	},
+	"extName": {
+		"message": "uMatrix",
+		"description": ""
+	},
+	"extShortDesc": {
+		"message": "マウス一つでどんな種類のリクエストでも拒否/許可することができます。スクリプト、Iframe、広告、Facebookなどをブロックします。",
+		"description": "this will be used as short description in web stores: MUST BE 132 characters OR LESS"
+	},
+	"dashboardPageName": {
+		"message": "uMatrix — ダッシュボード",
+		"description": ""
+	},
+	"loggerPageName": {
+		"message": "uMatrix — ログ表示",
+		"description": "Title for the logger window"
+	},
+	"settingsPageName": {
+		"message": "設定",
+		"description": "a tab in dashboard"
+	},
+	"privacyPageName": {
+		"message": "プライバシー",
+		"description": "a tab in dashboard"
+	},
+	"statsPageName": {
+		"message": "統計",
+		"description": "a tab in dashboard"
+	},
+	"userRulesPageName": {
+		"message": "My ルール",
+		"description": "a tab in dashboard"
+	},
+	"ubiquitousRulesPageName": {
+		"message": "アセット",
+		"description": "a tab in dashboard"
+	},
+	"rawSettingsPageName": {
+		"message": "詳細",
+		"description": "a tab in dashboard"
+	},
+	"aboutPageName": {
+		"message": "uMatrix について",
+		"description": "a tab in dashboard"
+	},
+	"allPrettyName": {
+		"message": "すべて",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"cookiePrettyName": {
+		"message": "Cookie",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"cssPrettyName": {
+		"message": "CSS",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"imagePrettyName": {
+		"message": "画像",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"mediaPrettyName": {
+		"message": "Media",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"pluginPrettyName": {
+		"message": "Media",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"scriptPrettyName": {
+		"message": "Script",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"fetchPrettyName": {
+		"message": "fetch",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"framePrettyName": {
+		"message": "Frame",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"otherPrettyName": {
+		"message": "他",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"matrixNoNetTrafficPrompt": {
+		"message": "このタブではネットワークトラフィックを検出できません",
+		"description": ""
+	},
+	"matrixLocalScopeTip": {
+		"message": "ルールを作成・表示するスコープを選択する",
+		"description": "Tool tip for the local scope button"
+	},
+	"matrixGlobalScopeTip": {
+		"message": "すべてのページに適用するルールを作成・表示する",
+		"description": "Tool tip for the global scope button"
+	},
+	"matrixMtxButtonTip": {
+		"message": "このスコープの Matrix フィルタの有効/無効を切り替える",
+		"description": "Tool tip for matrix button"
+	},
+	"matrixPersistButtonTip": {
+		"message": "このスコープの一時的な変更をすべて保存する",
+		"description": "Tool tip for the persist button"
+	},
+	"matrixRevertButtonTip": {
+		"message": "このスコープの一時的な変更を元に戻す",
+		"description": "Tool tip for the revert local permission button"
+	},
+	"matrixReloadButton": {
+		"message": "このページを再読み込みする。\nShift キーを押しながら実行すると、キャッシュを無視した再読み込みを行います",
+		"description": "Tool tip for the reload button"
+	},
+	"matrix1stPartyLabel": {
+		"message": "1st Party",
+		"description": "1st-party"
+	},
+	"matrixBlacklistedHostnames": {
+		"message": "{{count}} 件がブラックリストと一致",
+		"description": "Appears in the metadata row of bottom-most group: **mind the limited width**"
+	},
+	"matrixSwitchNoMixedContent": {
+		"message": "混在コンテンツをブロック",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixSwitchNoWorker": {
+		"message": "Web Worker をブロック",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixSwitchReferrerSpoof": {
+		"message": "リファラの偽装",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixSwitchNoscriptSpoof": {
+		"message": "<code><noscript></code> タグの偽装",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixSwitchRevealCname": {
+		"message": "Reveal canonical names",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixRevertAllEntry": {
+		"message": "すべての一時的な変更を元に戻す",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixLoggerMenuEntry": {
+		"message": "ログを表示",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixDashboardMenuEntry": {
+		"message": "ダッシュボードを開く",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixNoTabFound": {
+		"message": "ページが見つかりません",
+		"description": "Displays in place of matrix when no data is found for the current page"
+	},
+	"matrixRecipeImportTip": {
+		"message": "このルールを読み込む",
+		"description": "Used as a tooltip for the recipe import button"
+	},
+	"matrixRecipeSaveTip": {
+		"message": "このルールを保存する",
+		"description": "Used as a tooltip for the recipe padlock button"
+	},
+	"statsPageTitle": {
+		"message": "uMatrix &ndash; 統計",
+		"description": ""
+	},
+	"statsPageGenericStats": {
+		"message": "一般的な統計",
+		"description": ""
+	},
+	"statsPageCookieHeadersFoiled": {
+		"message": "拒否した <a href='https://ja.wikipedia.org/wiki/HTTP_cookie'>Cookie</a> の数: {{count}}",
+		"description": ""
+	},
+	"statsPageRefererHeadersFoiled": {
+		"message": "拒否した <a href='https://ja.wikipedia.org/wiki/HTTP%E3%83%AA%E3%83%95%E3%82%A1%E3%83%A9'>リファラ</a> の数: {{count}}",
+		"description": ""
+	},
+	"statsPageHyperlinkAuditingFoiled": {
+		"message": "拒否した <a href='https://html.spec.whatwg.org/multipage/semantics.html#hyperlink-auditing'>ハイパーリンク監査</a> の数: {{count}}",
+		"description": ""
+	},
+	"statsPageCookiesRemoved": {
+		"message": "削除した Cookie の数: {{count}}",
+		"description": ""
+	},
+	"statsPageLocalStoragesCleared": {
+		"message": "<a href='http://diveintohtml5.info/storage.html'>Local storage</a> を空にした数: {{count}}",
+		"description": ""
+	},
+	"statsPageBrowserCacheCleared": {
+		"message": "ブラウザキャッシュを消去した数: {{count}}",
+		"description": ""
+	},
+	"statsPageDetailedStats": {
+		"message": "詳細な統計",
+		"description": ""
+	},
+	"statsPageDetailedAllPages": {
+		"message": "すべて",
+		"description": ""
+	},
+	"statsPageDetailedBehindTheScenePage": {
+		"message": "バックグラウンドリクエスト",
+		"description": ""
+	},
+	"statsPageOverview": {
+		"message": "概要",
+		"description": ""
+	},
+	"statsPageRequests": {
+		"message": "リクエスト",
+		"description": "header for the stat type column"
+	},
+	"statsPageAllowed": {
+		"message": "許可",
+		"description": "header for the allowed requests column"
+	},
+	"statsPageBlocked": {
+		"message": "ブロック中",
+		"description": "header for the blocked requests column"
+	},
+	"statsPageAll": {
+		"message": "すべて",
+		"description": ""
+	},
+	"statsPagePages": {
+		"message": "ページ",
+		"description": ""
+	},
+	"statsPageCookies": {
+		"message": "Cookie",
+		"description": ""
+	},
+	"statsPageCSS": {
+		"message": "CSS",
+		"description": ""
+	},
+	"statsPageImages": {
+		"message": "画像",
+		"description": ""
+	},
+	"statsPagePlugins": {
+		"message": "Plugins",
+		"description": ""
+	},
+	"statsPageScripts": {
+		"message": "スクリプト",
+		"description": ""
+	},
+	"statsPageXHRs": {
+		"message": "XHRs",
+		"description": ""
+	},
+	"statsPageFrames": {
+		"message": "フレーム",
+		"description": ""
+	},
+	"statsPageOthers": {
+		"message": "その他",
+		"description": ""
+	},
+	"statsPageDetailed": {
+		"message": "ログ表示",
+		"description": ""
+	},
+	"statsPageLogSizePrompt1": {
+		"message": "ページあたり直近の",
+		"description": "First part of Remember the last [n] HTTP requests per page"
+	},
+	"statsPageLogSizePrompt2": {
+		"message": "個の HTTP リクエストを記録する",
+		"description": "Second part of Remember the last [n] HTTP requests per page"
+	},
+	"statsPageLogSizeHelp": {
+		"message": "<p>Web ページ（下記参照）による直近の HTTP リクエストの詳細を調べることができます。</p><p>これは、Web ページが何をしていたかを正確に調べたい上級ユーザーにとってとても便利です。しかし、これらの HTTP リクエストをログに記録するのは多くのメモリーを必要とします。もしあなたがこの技術情報を必要としない場合、メモリーが浪費されています。</p><p>このフィールドではログに記録される直近の HTTP リクエストの上限を調整することができます。</p><p>ログ記録を無効化したい（そして <i>uMatrix</i> のメモリー消費量を削減したい）場合は &ldquo;<code>0</code>&rdquo; を入力してください。</p>",
+		"description": "To help user understand the purpose of the log size value"
+	},
+	"statsPageRefresh": {
+		"message": "再読み込み",
+		"description": ""
+	},
+	"logAll": {
+		"message": "All",
+		"description": "Appears in the logger's tab selector"
+	},
+	"logBehindTheScene": {
+		"message": "Tabless",
+		"description": "Pretty name for behind-the-scene network requests"
+	},
+	"loggerCurrentTab": {
+		"message": "Current tab",
+		"description": "Appears in the logger's tab selector"
+	},
+	"loggerReloadTip": {
+		"message": "Reload the tab content",
+		"description": "Tooltip for the reload button in the logger page"
+	},
+	"loggerFilterInputPlaceholder": {
+		"message": "フィルタする",
+		"description": "Appears in the input filed where filter expressions are entered"
+	},
+	"loggerEntryCookieDeleted": {
+		"message": "削除した Cookie：{{value}}",
+		"description": "An entry for when a cookie is deleted"
+	},
+	"loggerEntryDeleteCookieError": {
+		"message": "Cookie の削除に失敗しました：{{value}}",
+		"description": "An entry for when the browser cache is cleared"
+	},
+	"loggerEntryBrowserCacheCleared": {
+		"message": "ブラウザのキャッシュを削除しました",
+		"description": "An entry for when a cookie can't be deleted"
+	},
+	"loggerEntryAssetUpdated": {
+		"message": "リソースを更新しました：{{value}}",
+		"description": "An entry for when an asset was updated"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Toggle logger filtering",
+		"description": "Tooltip for the row filterer button in the logger page"
+	},
+	"logFilterPrompt": {
+		"message": "filter logger content",
+		"description": "Placeholder string for logger output filtering input field"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Toggle the popup panel",
+		"description": "Tooltip for the popup panel button in the logger page"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin wiki: The logger",
+		"description": "Tooltip for the top-right info label in the logger page"
+	},
+	"loggerClearTip": {
+		"message": "Clear logger",
+		"description": "Tooltip for the eraser in the logger page; used to blank the content of the logger"
+	},
+	"loggerPauseTip": {
+		"message": "Pause logger (discard all incoming data)",
+		"description": "Tooltip for the pause button in the logger page"
+	},
+	"loggerUnpauseTip": {
+		"message": "Unpause logger",
+		"description": "Tooltip for the play button in the logger page"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Logger filtering options",
+		"description": "Tooltip for the button to bring up logger output filtering options"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Not",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "blocked",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerRowFiltererBuiltinInfo": {
+		"message": "info",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "1st-party",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "3rd-party",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Details",
+		"description": "Small header to identify the 'Details' pane for a specific logger entry"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Context",
+		"description": "Label to identify a context field (typically a hostname)"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Partyness",
+		"description": "Label to identify a field providing partyness information"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Type",
+		"description": "Label to identify the type of an entry"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL",
+		"description": "Label to identify the URL of an entry"
+	},
+	"loggerEntryRuleHeader": {
+		"message": "Rule",
+		"description": "Small header to identify the 'Rule' pane for a specific logger entry"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Logger entries which do not fulfill all three conditions below will be automatically discarded:",
+		"description": "Logger setting: A sentence to describe the purpose of the settings below"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Preserve entries from the last {{input}} minutes",
+		"description": "A logger setting"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Preserve at most {{input}} page loads per tab",
+		"description": "A logger setting"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Preserve at most {{input}} entries per tab",
+		"description": "A logger setting"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Use {{input}} lines per entry in vertically expanded mode",
+		"description": "A logger setting"
+	},
+	"loggerExportFormatList": {
+		"message": "List",
+		"description": "Label for radio-button to pick export format"
+	},
+	"loggerExportFormatTable": {
+		"message": "Table",
+		"description": "Label for radio-button to pick export format"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Plain",
+		"description": "Label for radio-button to pick export text format"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown",
+		"description": "Label for radio-button to pick export text format"
+	},
+	"settingsPageTitle": {
+		"message": "uMatrix &ndash; 設定",
+		"description": ""
+	},
+	"settingsMatrixDisplayHeader": {
+		"message": "外観",
+		"description": "header for matrix settings used in Settings page"
+	},
+	"settingsMatrixDisplayTextSizePrompt": {
+		"message": "文字の大きさ：",
+		"description": ""
+	},
+	"settingsIconBadgeEnabled": {
+		"message": "ブロックしたリソースの数をアイコンに表示する",
+		"description": ""
+	},
+	"settingsMatrixDisplayColorBlind": {
+		"message": "色覚障害の人に見やすい色で表示する",
+		"description": ""
+	},
+	"settingsMatrixConvenienceHeader": {
+		"message": "利便性",
+		"description": "English: Convenience"
+	},
+	"settingsDefaultScopeLevel": {
+		"message": "デフォルトのスコープレベル：",
+		"description": "Label for default scope level selector in Settings pane"
+	},
+	"settingsDefaultScopeLevel0": {
+		"message": "グローバル",
+		"description": "Scope will be global"
+	},
+	"settingsDefaultScopeLevel1": {
+		"message": "ドメイン",
+		"description": "Scope will be base domain"
+	},
+	"settingsDefaultScopeLevel2": {
+		"message": "サイト",
+		"description": "Scope will be full hostname of site"
+	},
+	"settingsCollapseBlocked": {
+		"message": "ブロックした要素のプレースホルダを表示しない",
+		"description": "A setting in the dashboard's Settings pane"
+	},
+	"settingsCollapseBlacklisted": {
+		"message": "明示的に拒否した要素のプレースホルダを表示しない",
+		"description": "A setting in the dashboard's Settings pane: 'blacklisted' means 'for which there is a specific block rule', 'specific' means 'a rule for which the destination hostname is not `*`'"
+	},
+	"settingsNoscriptTagsSpoofed": {
+		"message": "訪れているサイトのスクリプトがブロックされている場合に <code><noscript></code> タグを偽装する",
+		"description": "This appears in the Settings pane in the dashboard"
+	},
+	"settingsCloudStorageEnabled": {
+		"message": "クラウドストレージのサポートを有効にする",
+		"description": ""
+	},
+	"settingsMatrixNoTooltips": {
+		"message": "ツールチップを無効にする",
+		"description": ""
+	},
+	"privacyPageTitle": {
+		"message": "uMatrix &ndash; プライバシー",
+		"description": ""
+	},
+	"privacyDeleteBlockedCookiesPrompt": {
+		"message": "ブロックした Cookie を削除する",
+		"description": ""
+	},
+	"privacyDeleteBlockedCookiesHelp": {
+		"message": "<p><i>uMatrix</i> は、ブロックされる設定の Cookie であってもブラウザに入ってくることは許可し、出て行くことをブロックします（後者が本当に必要なことです）。ブラウザに入ってくるのを許可することで、そのサイトが Cookie を使おうとしていることをユーザが確認でき、さらにその内容を調べることもできます。</p><p><i>uMatrix</i> でこれらの Cookie について確認したあと、必要であればそれらをブラウザから削除しても構いません。</p><p><b>重要な注意点：</b> ブラウザの拡張機能はその機能の一部として Web リクエストをおこなうことがあり、場合によってはブラウザ内に Cookie が保存されます。このオプションをオンにした場合、該当のホストを許可しておかないと <i>uMatrix</i> によって Cookie が削除されます。拡張機能が通信するホストを許可しておくことを忘れないでください。</p>",
+		"description": ""
+	},
+	"privacyDeleteNonBlockedSessionCookiesPrompt1": {
+		"message": "ブロックしていないセッション Cookie を削除する （",
+		"description": "First part of 'Delete non-blocked session cookies [n] minutes after the last time they have been used'"
+	},
+	"privacyDeleteNonBlockedSessionCookiesPrompt2": {
+		"message": " 分間使用されていない場合）",
+		"description": "Second part of 'Delete non-blocked session cookies [n] minutes after the last time they have been used'"
+	},
+	"privacyDeleteNonBlockedSessionCookiesHelp": {
+		"message": "<p><a href='http://www.w3.org/2001/tag/2010/09/ClientSideStorage.html'>W3C</a>： &ldquo;ブラウザを終了するとセッション Cookie は消去されます。セッション Cookie は一時的に保存され、ブラウザが閉じられた後には保持されません。&rdquo;</p><p><a href='https://code.google.com/p/chromium/issues/detail?id=128513'>この動きをしない</a> ブラウザもあります。また、セッション Cookie を消去するためだけに、ブラウザを閉じたくないということがあるかもしれません。</p>",
+		"description": ""
+	},
+	"privacyDeleteBlockedLocalStoragePrompt": {
+		"message": "ブロックしているホストが保存した <a href='https://en.wikipedia.org/wiki/Web_storage'>Local storage</a> を削除する",
+		"description": ""
+	},
+	"privacyDeleteBlockedLocalStorageHelp": {
+		"message": "TODO",
+		"description": ""
+	},
+	"privacyClearCachePrompt1": {
+		"message": "ブラウザのキャッシュをクリアする（",
+		"description": "First part of 'Clear browser cache every [n] minutes'"
+	},
+	"privacyClearCachePrompt2": {
+		"message": "分おき）",
+		"description": "Second part of 'Clear browser cache every [n] minutes'"
+	},
+	"privacyClearCacheHelp": {
+		"message": "<p>ユーザの行動を追跡するのに必死な Web サイトもあります。こうした Web サイトは行儀の悪い方法を使って、追跡されないようにするための対策を回避しようとします。</p><p>こうした手法の一部は、<a href='https://en.wikipedia.org/wiki/Web_cache'>ブラウザのキャッシュ</a>に依存 <sup>[1, 2]</sup> しています。なぜなら、ブラウザのキャッシュを消去する人はまれで、多くの場合に長期間にわたって残り続けるためです。</p><p>定期的にブラウザのキャッシュを消去することによる不都合はほとんどありません（あるとすれば、消去されるときユーザが気づかないということです）。メリットは、こうした不愉快なトラッカーによってあなたのプライバシーが侵害されるのを防げるという点です。</p><p>このオプションを設定することで、任意の間隔で <i>uMatrix</i> がブラウザのキャッシュを消去するようになります。</p><p>[1] <a href='https://grepular.com/Preventing_Web_Tracking_via_the_Browser_Cache'>&ldquo;Preventing Web Tracking via the Browser Cache&rdquo;</a>[2] <a href='http://lucb1e.com/rp/cookielesscookies/'>&ldquo;Cookieless cookies&rdquo;</a></p>",
+		"description": ""
+	},
+	"privacyProcessRefererPrompt": {
+		"message": "サードパーティーリクエストの <a href='https://ja.wikipedia.org/wiki/HTTP%E3%83%AA%E3%83%95%E3%82%A1%E3%83%A9'>HTTP リファラ</a> を偽装する",
+		"description": ""
+	},
+	"privacyProcessRefererHelp": {
+		"message": "Wikipedia から引用：<blockquote>HTTP リファラは、要求しているリソースにリンクしたウェブページのアドレスを識別する HTTP ヘッダのフィールドです。<b>リファラはプライバシーを侵害するおそれがあるため、一部の Web ブラウザでは、ユーザーがリファラの送信を無効にすることができます</b>。</blockquote>この設定をオンにすると、HTTP リファラのドメイン名がアクセスしている Web サイトのドメイン名と異なる場合（サードパーティリクエストである場合）、<i>uMatrix</i> は HTTP リファラを偽装します。",
+		"description": ""
+	},
+	"privacyNoMixedContentPrompt": {
+		"message": "厳密な HTTPS: 混在コンテンツをブロックする",
+		"description": ""
+	},
+	"privacyNoMixedContentHelp": {
+		"message": "<p><a href='https://developer.mozilla.org/ja/docs/Security/%E6%B7%B7%E5%9C%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84'>Mozilla Developer Network</a> から引用：</p><blockquote>HTTPS のページの中に平文の HTTP で送られてくるコンテンツが含まれている場合、混在コンテンツと呼ばれます。このようなページは部分的にしか暗号化されておらず、盗聴者や中間者攻撃者が暗号化されていないコンテンツにアクセスできてしまいます。つまり、ページは安全ではありません。</blockquote>",
+		"description": ""
+	},
+	"privacyProcessHyperlinkAuditingPrompt": {
+		"message": "すべての <a href='https://html.spec.whatwg.org/multipage/semantics.html#hyperlink-auditing'>ハイパーリンク監査</a> を拒否する",
+		"description": ""
+	},
+	"privacyProcessHyperlinkAuditingHelp": {
+		"message": "<p>ハイパーリンクの監査は、ユーザーが特定の Web ページ上でどのリンクをクリックしたかを <b>不特定の誰か</b> に通知することを可能にする仕組みです。これは本質的にトラッキングの機能です。あなたがあるリンクをクリックしたとき、それを Web サイト（または第三者）に通知します。この機能の唯一の目的は、あなたのブラウジングを追跡することです。</p>",
+		"description": ""
+	},
+	"userRulesPermanentHeader": {
+		"message": "永続的なルール",
+		"description": ""
+	},
+	"userRulesTemporaryHeader": {
+		"message": "一時的なルール",
+		"description": ""
+	},
+	"userRulesRevert": {
+		"message": "元に戻す",
+		"description": "Will remove all temporary rules"
+	},
+	"userRulesCommit": {
+		"message": "コミット",
+		"description": "Will save all temporary rules"
+	},
+	"userRulesEdit": {
+		"message": "編集",
+		"description": "Will enable manual-edit mode (textarea)"
+	},
+	"userRulesEditSave": {
+		"message": "保存",
+		"description": "Will save manually-edited content and exit manual-edit mode"
+	},
+	"userRulesEditDicard": {
+		"message": "破棄",
+		"description": "Will discard manually-edited content and exit manual-edit mode"
+	},
+	"userRulesImport": {
+		"message": "ファイルからインポート...",
+		"description": ""
+	},
+	"userRulesExport": {
+		"message": "ファイルへエクスポート...",
+		"description": ""
+	},
+	"userRulesFormatHint": {
+		"message": "ルールの構文については、このページを参照してください。",
+		"description": ""
+	},
+	"userRulesDefaultFileName": {
+		"message": "my-umatrix-rules.txt",
+		"description": "default file name to use"
+	},
+	"assetsHostsSection": {
+		"message": "ホストファイル",
+		"description": "header to identify the hosts files section"
+	},
+	"hostsFilesPrompt": {
+		"message": "ホストファイルに記載されたすべてのホストへの、あらゆるリクエストはブロックされます。",
+		"description": ""
+	},
+	"hostsFilesStats": {
+		"message": "{{blockedHostnameCount}} 件のホストをブロックしています：",
+		"description": ""
+	},
+	"hostsFilesPerFileStats": {
+		"message": "{{total}} 件のうち {{used}} 件を使用中",
+		"description": ""
+	},
+	"hostsFilesLastUpdate": {
+		"message": "最終更新日: {{ago}}",
+		"description": "English: Last update: {{ago}}, where 'ago' will be replaced with something like '2 days ago'"
+	},
+	"hostsFilesApplyChanges": {
+		"message": "変更を適用する",
+		"description": ""
+	},
+	"hostsFilesAutoUpdatePrompt": {
+		"message": "アセットを自動で更新する",
+		"description": ""
+	},
+	"hostsFilesUpdateNow": {
+		"message": "今すぐアップデート",
+		"description": ""
+	},
+	"hostsFilesPurgeAll": {
+		"message": "すべてのキャッシュをクリア",
+		"description": ""
+	},
+	"hostsFilesExternalListsHint": {
+		"message": "追加するアセットの URL をここに書きます。\n1 行にひとつずつ書いてください。無効な URL は警告なしに無視されます。",
+		"description": ""
+	},
+	"hostsFilesExternalListsParse": {
+		"message": "読み込む",
+		"description": ""
+	},
+	"hostsFilesExternalListPurge": {
+		"message": "キャッシュのクリア",
+		"description": ""
+	},
+	"hostsFilesExternalListNew": {
+		"message": "新しいバージョンを利用できます",
+		"description": ""
+	},
+	"hostsFilesExternalListObsolete": {
+		"message": "古い",
+		"description": ""
+	},
+	"assetsRecipesSection": {
+		"message": "ルールレシピ",
+		"description": "header to identify the ruleset files section"
+	},
+	"assetsRecipesSummary": {
+		"message": "ルールレシピは、ポップアップパネルで<b>ユーザーが選択して初めて</b>、ルールに追加されます。",
+		"description": ""
+	},
+	"assetsImportLabel": {
+		"message": "追加...",
+		"description": ""
+	},
+	"assetsInlineHostsLabel": {
+		"message": "My ホスト",
+		"description": ""
+	},
+	"assetsInlineRecipesLabel": {
+		"message": "My ルールレシピ",
+		"description": ""
+	},
+	"rawSettingsWarning": {
+		"message": "警告！　これらの内部設定はご自身のリスクにより変更すること。",
+		"description": ""
+	},
+	"aboutChangelog": {
+		"message": "<a href='https://github.com/gorhill/uMatrix/releases'>変更履歴</a>",
+		"description": ""
+	},
+	"aboutStorageUsed": {
+		"message": "使用中のストレージ: {{storageUsed}} bytes",
+		"description": ""
+	},
+	"aboutDoc": {
+		"message": "<a href='https://github.com/gorhill/uMatrix/wiki'>ドキュメント</a>",
+		"description": ""
+	},
+	"aboutPermissions": {
+		"message": "<a href='https://github.com/gorhill/uMatrix/wiki/Permissions'>パーミッションについて</a>",
+		"description": ""
+	},
+	"aboutCode": {
+		"message": "ソースコード (GPLv3)",
+		"description": ""
+	},
+	"aboutIssues": {
+		"message": "バグや問題点",
+		"description": "Text for a link to official issue tracker"
+	},
+	"aboutContributors": {
+		"message": "協力者",
+		"description": "English: Contributors"
+	},
+	"aboutCodeContributors": {
+		"message": "ソースコード：",
+		"description": ""
+	},
+	"aboutIssueContributors": {
+		"message": "問題点：",
+		"description": ""
+	},
+	"aboutTranslationContributors": {
+		"message": "翻訳：",
+		"description": ""
+	},
+	"aboutUserDataHeader": {
+		"message": "データ",
+		"description": ""
+	},
+	"aboutBackupButton": {
+		"message": "ファイルにバックアップ...",
+		"description": ""
+	},
+	"aboutBackupFilename": {
+		"message": "my-umatrix-backup.txt",
+		"description": "default filename to use"
+	},
+	"aboutRestoreButton": {
+		"message": "ファイルから復元...",
+		"description": ""
+	},
+	"aboutRestoreConfirm": {
+		"message": "すべての設定は {{time}} のバックアップデータで上書きされ、uMatrix が再起動します。\n\nバックアップデータで上書きしますか？",
+		"description": "Message asking user to confirm restore"
+	},
+	"aboutRestoreError": {
+		"message": "データを読み込めなかったか、無効なデータです",
+		"description": ""
+	},
+	"aboutOr": {
+		"message": "... もしくは ...",
+		"description": "English: ... or ..."
+	},
+	"aboutResetButton": {
+		"message": "初期設定に戻す",
+		"description": "English: Reset to default settings"
+	},
+	"aboutResetConfirm": {
+		"message": "注意！ 設定はすべて削除されます。続行してもよろしいですか？",
+		"description": "Message asking user to confirm reset"
+	},
+	"mainBlockedPrompt1": {
+		"message": "uMatrix はこのページの読み込みをブロックしています：",
+		"description": "English: uMatrix has prevented the following page from loading:"
+	},
+	"mainBlockedPrompt2": {
+		"message": "以下のルールに従う",
+		"description": "English: Because of the following rule"
+	},
+	"mainBlockedNoParamsPrompt": {
+		"message": "パラメータを除いたURL",
+		"description": "label to be used for the parameter-less URL: https://cloud.githubusercontent.com/assets/585534/9832014/bfb1b8f0-593b-11e5-8a27-fba472a5529a.png"
+	},
+	"mainBlockedBack": {
+		"message": "戻る",
+		"description": "English: Go back"
+	},
+	"mainBlockedClose": {
+		"message": "閉じる",
+		"description": "English: Close"
+	},
+	"commandRevertAll": {
+		"message": "すべての一時的な変更を元に戻す",
+		"description": ""
+	},
+	"commandWhitelistPageDomain": {
+		"message": "このページのドメインを一時的にホワイトリストに登録する",
+		"description": ""
+	},
+	"commandWhitelistAll": {
+		"message": "一時的にすべてホワイトリストに登録",
+		"description": ""
+	},
+	"commandOpenDashboard": {
+		"message": "ダッシュボードを開く",
+		"description": ""
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "1 分前",
+		"description": "English: a minute ago"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} 分前",
+		"description": "English: {{value}} minutes ago"
+	},
+	"elapsedOneHourAgo": {
+		"message": "1 時間前",
+		"description": "English: an hour ago"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} 時間前",
+		"description": "English: {{value}} hours ago"
+	},
+	"elapsedOneDayAgo": {
+		"message": "1 日前",
+		"description": "English: a day ago"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} 日前",
+		"description": "English: {{value}} days ago"
+	},
+	"showDashboardButton": {
+		"message": "ダッシュボード",
+		"description": "Appears in Firefox's add-on preferences"
+	},
+	"showLoggerButton": {
+		"message": "ログ表示",
+		"description": "Appears in Firefox's add-on preferences"
+	},
+	"cloudPush": {
+		"message": "クラウドストレージにエクスポート",
+		"description": "tooltip"
+	},
+	"cloudPull": {
+		"message": "クラウドストレージからインポート",
+		"description": "tooltip"
+	},
+	"cloudNoData": {
+		"message": "...\n...",
+		"description": ""
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "このデバイスの名称：",
+		"description": "used as a prompt for the user to provide a custom device name"
+	},
+	"genericSubmit": {
+		"message": "登録する",
+		"description": "for generic 'submit' buttons"
+	},
+	"genericRevert": {
+		"message": "元に戻す",
+		"description": "for generic 'revert' buttons"
+	},
+	"errorCantConnectTo": {
+		"message": "ネットワークエラー: {{url}} に接続できません",
+		"description": ""
+	},
+	"genericApplyChanges": {
+		"message": "変更を適用",
+		"description": "for generic 'Apply changes' buttons"
+	},
+	"genericCopyToClipboard": {
+		"message": "Copy to clipboard",
+		"description": "Label for buttons used to copy something to the clipboard"
+	}
+}

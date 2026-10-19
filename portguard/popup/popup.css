@@ -1,0 +1,134 @@
+/* No fixed width: this page is always embedded as one tab of the merged
+   popup (popup.html), which sizes itself to whichever tab needs the most
+   room — usually Matrix. A hardcoded width here would stop this page from
+   matching that shared (often wider) size. */
+body {
+	min-width: 280px;
+	margin: 0;
+	padding: 0.75em 0.75em 1em;
+	box-sizing: border-box;
+	font: 13px/1.4 system-ui, sans-serif;
+}
+body.loading #status-icon img,
+body.loading .status-badge {
+	transition: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* Big centered status icon, matching CanvasBlocker's browser-action style:
+   the icon itself is the blocking on/off toggle, with a small badge for state. */
+#status-icon {
+	position: relative;
+	align-self: center;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	margin: 0.25em 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+#status-icon img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: filter 0.15s ease, opacity 0.15s ease;
+}
+body[data-blocking="off"] #status-icon img {
+	filter: grayscale(1);
+	opacity: 0.55;
+}
+
+.status-badge {
+	position: absolute;
+	right: -3px;
+	bottom: -3px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 2px solid var(--bg);
+	background: var(--allow-strong-bg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.status-badge::before {
+	content: "✓";
+	color: var(--allow-strong-fg);
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 1;
+}
+body[data-blocking="off"] .status-badge {
+	background: var(--block-strong-bg);
+}
+body[data-blocking="off"] .status-badge::before {
+	content: "–";
+	color: var(--block-strong-fg);
+}
+
+.action-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px 10px;
+	background: transparent;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	color: var(--fg);
+	font: inherit;
+	cursor: pointer;
+	text-align: left;
+}
+.action-row:hover {
+	background: var(--bg-input);
+}
+.gear-icon {
+	flex: none;
+	color: var(--fg-muted);
+}
+
+.activity {
+	padding-top: 10px;
+	border-top: 1px solid var(--border);
+}
+.activity h2 {
+	margin: 0 0 6px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--fg-muted);
+}
+.activity-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-height: 160px;
+	overflow-y: auto;
+}
+.blocked-host-item {
+	display: flex;
+	justify-content: space-between;
+	gap: 8px;
+	padding: 4px 0;
+	border-bottom: 1px solid var(--border);
+}
+.blocked-host-item:last-child {
+	border-bottom: none;
+}
+.blocked-host-item .host {
+	word-break: break-all;
+}
+.blocked-host-item .ports {
+	flex: none;
+	color: var(--fg-muted);
+	font-size: 11px;
+}

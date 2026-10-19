@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Import / Export</title>
+	<link href="import.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>Export</h1>
+	<p>
+		Save your current settings to a file, to keep a backup or move them to
+		another install.
+	</p>
+	<button id="exportCanvasBlockerButton">Export CanvasBlocker settings&hellip;</button>
+	<button id="exportUmatrixButton">Export uMatrix backup&hellip;</button>
+
+	<h1>Import</h1>
+	<p>
+		Select one or more exported files. Each file is recognized automatically:
+		a CanvasBlocker settings export (<code>.json</code>), a uMatrix full backup
+		(<code>.json</code>), or a uMatrix &quot;my rules&quot; text export (<code>.txt</code>).
+		Port Authority has no export format and is not covered here.
+	</p>
+
+	<input type="file" id="filePicker" multiple accept=".json,.txt">
+
+	<ul id="fileList"></ul>
+
+	<p id="restartWarning" class="hidden">
+		Importing a uMatrix full backup reloads the whole extension once applied.
+		If you are also importing other files in this batch, they are applied first.
+	</p>
+
+	<button id="applyButton" disabled>Apply selected imports</button>
+	<div id="log"></div>
+
+	<!-- Storage namespacing shim, must load before the CanvasBlocker lib stack below. -->
+	<script src="../shared/storage-namespace.js"></script>
+
+	<!-- CanvasBlocker lib stack: same modules options/export.js relies on, so the
+	     JSON-export validation/migration logic behaves identically here. -->
+	<script src="../canvasblocker/lib/require.js"></script>
+	<script src="../canvasblocker/lib/logging.js"></script>
+	<script src="../canvasblocker/lib/extension.js"></script>
+	<script src="../canvasblocker/lib/settingDefinitions.js"></script>
+	<script src="../canvasblocker/lib/settingContainers.js"></script>
+	<script src="../canvasblocker/lib/settingsMigration.js"></script>
+	<script src="../canvasblocker/lib/settings.js"></script>
+
+	<!-- uMatrix client messaging stack: same modules about.html/user-rules.html rely on,
+	     so restoreAllUserData / modifyRuleset reach uMatrix's own existing handlers. -->
+	<script src="../umatrix/js/vapi.js"></script>
+	<script src="../umatrix/js/vapi-common.js"></script>
+	<script src="../umatrix/js/vapi-client.js"></script>
+
+	<script src="importAdapter.js"></script>
+	<script src="import.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="color-scheme" content="dark light">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Port Guard Settings</title>
+	<link rel="icon" type="image/png" href="../icons/icon_32.png">
+	<link rel="stylesheet" type="text/css" href="../../umatrix/css/common.css">
+	<link rel="stylesheet" type="text/css" href="./settings.css">
+</head>
+<body>
+	<main>
+		<section class="panel">
+			<h2>Notifications</h2>
+			<label class="switch-row">
+				<span class="switch-copy">
+					<span class="switch-title">Notifications</span>
+					<span class="switch-hint">Show a system notification when something is blocked</span>
+				</span>
+				<span class="switch">
+					<input type="checkbox" id="notifications-switch">
+					<span class="slider" aria-hidden="true"></span>
+				</span>
+			</label>
+		</section>
+
+		<section class="panel">
+			<h2>Allowlist</h2>
+			<p class="panel-copy">
+				Allowed domains, IP addresses, and CIDR ranges can make local requests and load
+				LexisNexis tracking scripts without being blocked. Domain entries match the page
+				making the request; IP and CIDR entries also match the request's destination.
+			</p>
+			<form id="allowlist-form" class="add-form">
+				<label class="field" for="allowlist-input">
+					<span class="field-label">Allow a domain, IP, or CIDR range</span>
+					<input
+						type="text"
+						id="allowlist-input"
+						autocomplete="off"
+						spellcheck="false"
+						placeholder="example.com, 127.0.0.1, or 192.168.1.0/24"
+					>
+				</label>
+				<button type="submit" class="primary-button">Add entry</button>
+			</form>
+			<ul id="allowlist-items" class="entry-list" hidden></ul>
+		</section>
+
+		<section class="panel">
+			<h2>Always-Allowed Local Navigations</h2>
+			<p class="panel-copy">
+				Saved "Always Allow" decisions from the local-navigation prompt. Each entry is an
+				origin → local destination pair.
+			</p>
+			<ul id="always-allow-items" class="entry-list" hidden></ul>
+		</section>
+	</main>
+
+	<script type="module" src="./settings.js"></script>
+</body>
+</html>

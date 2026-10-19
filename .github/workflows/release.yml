@@ -1,0 +1,76 @@
+name: Release
+
+# Packages the extension and publishes it as a GitHub Release.
+# Fires when you push a version tag (bump "version" in manifest.json, commit,
+# then `git tag v1.0.0 && git push --tags`), or manually from the Actions tab.
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve version
+        id: v
+        run: |
+          version=$(python3 -c "import json; print(json.load(open('manifest.json'))['version'])")
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=v$version" >> "$GITHUB_OUTPUT"
+          echo "Building uCanvasAuthority v$version"
+
+      - name: Tag must match manifest.json
+        if: github.ref_type == 'tag'
+        run: |
+          if [ "$GITHUB_REF_NAME" != "${{ steps.v.outputs.tag }}" ]; then
+            echo "::error::tag $GITHUB_REF_NAME does not match manifest.json (${{ steps.v.outputs.tag }})"
+            exit 1
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build zip
+        run: |
+          npx web-ext build -c web-ext-config.mjs
+          ls -la web-ext-artifacts/
+
+      - name: Rename artifact
+        env:
+          VERSION: ${{ steps.v.outputs.version }}
+        run: |
+          src=$(ls web-ext-artifacts/*.zip | head -1)
+          mv "$src" "web-ext-artifacts/ucanvasauthority-${VERSION}-firefox.zip"
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION: ${{ steps.v.outputs.version }}
+          TAG: ${{ steps.v.outputs.tag }}
+        run: |
+          cat > notes.md <<EOF
+          Canvas-fingerprint protection, request firewall and port-scan blocking for Firefox — three extensions in one.
+
+          **Download** (see assets below):
+          - \`ucanvasauthority-${VERSION}-firefox.zip\` — Firefox. Unzip, open \`about:debugging#/runtime/this-firefox\`, **Load Temporary Add-on** and pick \`manifest.json\` in the unzipped folder.
+
+          > No signed \`.xpi\` yet: until uCanvasAuthority is on addons.mozilla.org, Firefox loads it as a temporary add-on, which lasts until Firefox restarts.
+          EOF
+
+          gh release create "$TAG" \
+            "web-ext-artifacts/ucanvasauthority-${VERSION}-firefox.zip" \
+            --title "uCanvasAuthority $TAG" \
+            --notes-file notes.md \
+            --target "$GITHUB_SHA"

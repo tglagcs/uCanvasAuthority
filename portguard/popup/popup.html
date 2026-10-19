@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="color-scheme" content="dark light">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Port Guard</title>
+	<link rel="icon" type="image/png" href="../icons/icon_32.png">
+	<link rel="stylesheet" type="text/css" href="../../umatrix/css/common.css">
+	<link rel="stylesheet" type="text/css" href="./popup.css">
+</head>
+<body class="loading">
+	<main>
+		<button type="button" id="status-icon" aria-pressed="true" aria-label="Toggle Port Guard blocking">
+			<img src="../icons/icon_96.png" alt="">
+			<span class="status-badge" aria-hidden="true"></span>
+		</button>
+
+		<button type="button" id="settings-button" class="action-row">
+			<svg class="gear-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+				<circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+				<path d="M12 3.5v2.3M12 18.2v2.3M20.5 12h-2.3M5.8 12H3.5M17.66 6.34l-1.63 1.63M7.97 16.03l-1.63 1.63M17.66 17.66l-1.63-1.63M7.97 7.97 6.34 6.34" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+			</svg>
+			<span>Settings</span>
+		</button>
+
+		<section id="blocked-ports" class="activity" hidden>
+			<h2>Blocked Port Scans</h2>
+			<ul id="blocked-ports-list" class="activity-list"></ul>
+		</section>
+
+		<section id="blocked-hosts" class="activity" hidden>
+			<h2>Blocked Tracking Scripts</h2>
+			<ul id="blocked-hosts-list" class="activity-list"></ul>
+		</section>
+	</main>
+
+	<script type="module" src="./popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,2538 @@
+{
+	"addon_title": {
+		"message": "कैनवासब्लॉकर",
+		"description": ""
+	},
+	"addon_description": {
+		"message": "फ़िंगरप्रिंटिंग को रोकने के लिए कुछ JS API को बदलता है।",
+		"description": ""
+	},
+	"browserAction_title_default": {
+		"message": "कैनवासब्लॉकर",
+		"description": ""
+	},
+	"browserAction_title_notified": {
+		"message": " सुरक्षा के लिए सफल:",
+		"description": ""
+	},
+	"browserAction_title_whitelisted": {
+		"message": " ({url} के लिए व्हाइटलिस्ट कीये गए API)",
+		"description": ""
+	},
+	"browserAction_title_protectedAPIs": {
+		"message": "\n  · {api}",
+		"description": ""
+	},
+	"browserAction_status_on": {
+		"message": "कैनवासब्लॉकर चालू",
+		"description": ""
+	},
+	"browserAction_status_off": {
+		"message": "कैनवासब्लॉकर बंद",
+		"description": ""
+	},
+	"more": {
+		"message": "और",
+		"description": ""
+	},
+	"less": {
+		"message": "कम",
+		"description": ""
+	},
+	"pleaseWait": {
+		"message": "कृपया प्रतीक्षा करें...",
+		"description": ""
+	},
+	"search": {
+		"message": "सर्च",
+		"description": ""
+	},
+	"ok": {
+		"message": "ओके",
+		"description": ""
+	},
+	"apply": {
+		"message": "लागू करें",
+		"description": ""
+	},
+	"cancel": {
+		"message": "रद्द करें",
+		"description": ""
+	},
+	"input": {
+		"message": "इनपुट",
+		"description": ""
+	},
+	"readout": {
+		"message": "पढ़ कर सुनाएं",
+		"description": ""
+	},
+	"options": {
+		"message": "सेटिंग्स",
+		"description": ""
+	},
+	"options_title": {
+		"message": "कैनवासब्लॉकर सेटिंग्स",
+		"description": ""
+	},
+	"optionsIntroduction": {
+		"message": "इस पेज पर आप कैनवासब्लॉकर की सेटिंग्स को एडजस्ट कर सकते हैं।",
+		"description": ""
+	},
+	"installNotice": {
+		"message": "कैनवासब्लॉकर इनस्टॉल किया गया। यदि आप भविष्य में इस पेज को पहुँचने में सक्षम होना चाहते हैं, तो कृपया इसे बुकमार्क कर लें।",
+		"description": ""
+	},
+	"updateNotice": {
+		"message": "कैनवासब्लॉकर अपडेट किया गया। यदि आप भविष्य में इस पेज तक पहुँचने में सक्षम होना चाहते हैं और इसे अभी तक बुकमार्क नहीं किया है, तो कृपया इसे बुकमार्क करें।",
+		"description": ""
+	},
+	"dontShowOptionsOnUpdate": {
+		"message": "अपडेट के बाद फिर से न दिखाएं।",
+		"description": ""
+	},
+	"resistFingerprintingNotice": {
+		"message": "आपके पास Privacy.resistFingerprinting इनेबल्ड है। यह कैनवासब्लॉकर के व्यवहार को थोड़ा बदल देता है। अधिक जानकारी देखें {link:here:https://github.com/kkapsner/CanvasBlocker/issues/158} और {link:here:https://github.com/ghacksuserjs/ghacks-user.js/issues/767}.",
+		"description": ""
+	},
+	"settingsNotice.dom.webAudio.enabled": {
+		"message": "आपने dom.webAudio.enabled डिसेबल्ड कर दिया है। यह आपको अधिक ट्रैक करने योग्य बनाता है क्योंकि बहुत कम लोग ऐसा करते हैं।",
+		"description": ""
+	},
+	"openInTab": {
+		"message": "अलग टैब में खोलें",
+		"description": ""
+	},
+	"labelForDefaultOption": {
+		"message": " (default)",
+		"description": ""
+	},
+	"group_general": {
+		"message": "जनरल",
+		"description": ""
+	},
+	"group_APIs": {
+		"message": "APIs",
+		"description": ""
+	},
+	"group_misc": {
+		"message": "विविध",
+		"description": ""
+	},
+	"section_asking": {
+		"message": "पूछ रहा है",
+		"description": ""
+	},
+	"section_faking": {
+		"message": "फेकिंग",
+		"description": ""
+	},
+	"section_notifications": {
+		"message": "सूचनाएं",
+		"description": ""
+	},
+	"section_lists": {
+		"message": "लिस्ट्स",
+		"description": ""
+	},
+	"section_misc": {
+		"message": "विविध",
+		"description": ""
+	},
+	"section_settings": {
+		"message": "सेटिंग्स",
+		"description": ""
+	},
+	"section_canvas-api": {
+		"message": "कैनवास API",
+		"description": ""
+	},
+	"section_audio-api": {
+		"message": "ऑडियो API",
+		"description": ""
+	},
+	"section_history-api": {
+		"message": "हिस्ट्री API",
+		"description": ""
+	},
+	"section_window-api": {
+		"message": "विंडो API",
+		"description": ""
+	},
+	"section_DOMRect-api": {
+		"message": "DOMRect API",
+		"description": ""
+	},
+	"section_SVG-api": {
+		"message": "एसवीजी API",
+		"description": ""
+	},
+	"section_TextMetrics-api": {
+		"message": "टेक्स्ट मेट्रिक्स API",
+		"description": ""
+	},
+	"section_Navigator-api": {
+		"message": "नेविगेटर API",
+		"description": ""
+	},
+	"section_Screen-api": {
+		"message": "स्क्रीन API",
+		"description": ""
+	},
+	"displayAdvancedSettings_title": {
+		"message": "एक्स्पर्ट मोड",
+		"description": ""
+	},
+	"displayAdvancedSettings_description": {
+		"message": "अतिरिक्त सेटिंग्स प्रदर्शित करे ।",
+		"description": ""
+	},
+	"displayDescriptions_title": {
+		"message": "विवरण प्रदर्शित करें",
+		"description": ""
+	},
+	"displayDescriptions_description": {
+		"message": "सेटिंग्स का विवरण प्रदर्शित करता है।",
+		"description": ""
+	},
+	"disruptSessionOnUpdate_title": {
+		"message": "अपडेट पर सत्र बाधित करें",
+		"description": ""
+	},
+	"disruptSessionOnUpdate_description": {
+		"message": "अगर सही पर सेट किया जाता है तो अपडेट उपलब्ध होते ही एक्सटेंशन अपडेट हो जाएगा। यह कुछ टैब ब्रेक कर सकता है जो वर्तमान में खुले हैं।",
+		"description": ""
+	},
+	"reloadExtension_title": {
+		"message": "Reload extension",
+		"description": ""
+	},
+	"reloadExtension_description": {
+		"message": "Perform a pending update.",
+		"description": ""
+	},
+	"reloadExtension_label": {
+		"message": "Reload",
+		"description": ""
+	},
+	"hideSetting": {
+		"message": "Click here to hide this setting.",
+		"description": ""
+	},
+	"displayHiddenSettings_title": {
+		"message": "Display hidden settings",
+		"description": ""
+	},
+	"displayHiddenSettings_description": {
+		"message": "Activate to display the hidden settings.",
+		"description": ""
+	},
+	"askForInvisiblePermission": {
+		"message": "Do you want to allow invisible <canvas>?",
+		"description": ""
+	},
+	"askForInvisibleInputPermission": {
+		"message": "Do you want to allow invisible <canvas> input?",
+		"description": ""
+	},
+	"askForInvisibleReadoutPermission": {
+		"message": "Do you want to allow invisible <canvas> readout?",
+		"description": ""
+	},
+	"askForPermission": {
+		"message": "Do you want to allow <canvas>?",
+		"description": ""
+	},
+	"askForInputPermission": {
+		"message": "Do you want to allow <canvas> input?",
+		"description": ""
+	},
+	"askForReadoutPermission": {
+		"message": "Do you want to allow <canvas> readout?",
+		"description": ""
+	},
+	"askForVisiblePermission": {
+		"message": "Do you want to allow the red bordered <canvas>?",
+		"description": ""
+	},
+	"askForVisibleInputPermission": {
+		"message": "Do you want to allow input in the red bordered <canvas>?",
+		"description": ""
+	},
+	"askForVisibleReadoutPermission": {
+		"message": "Do you want to allow the readout of the red bordered <canvas>?",
+		"description": ""
+	},
+	"askForAudioPermission": {
+		"message": "Do you want to allow the audio API?",
+		"description": ""
+	},
+	"askForAudioInputPermission": {
+		"message": "Do you want to allow audio API input?",
+		"description": ""
+	},
+	"askForAudioReadoutPermission": {
+		"message": "Do you want to allow audio API readout?",
+		"description": ""
+	},
+	"askForHistoryPermission": {
+		"message": "Do you want to allow the history API?",
+		"description": ""
+	},
+	"askForHistoryInputPermission": {
+		"message": "Do you want to allow history API input?",
+		"description": ""
+	},
+	"askForHistoryReadoutPermission": {
+		"message": "Do you want to allow history API readout?",
+		"description": ""
+	},
+	"askForWindowPermission": {
+		"message": "Do you want to allow the window API?",
+		"description": ""
+	},
+	"askForWindowInputPermission": {
+		"message": "Do you want to allow window API input?",
+		"description": ""
+	},
+	"askForWindowReadoutPermission": {
+		"message": "Do you want to allow window API readout?",
+		"description": ""
+	},
+	"askForDOMRectPermission": {
+		"message": "Do you want to allow the DOMRect API?",
+		"description": ""
+	},
+	"askForDOMRectInputPermission": {
+		"message": "Do you want to allow DOMRect API input?",
+		"description": ""
+	},
+	"askForDOMRectReadoutPermission": {
+		"message": "Do you want to allow DOMRect API readout?",
+		"description": ""
+	},
+	"askForSVGPermission": {
+		"message": "Do you want to allow the SVG API?",
+		"description": ""
+	},
+	"askForSVGInputPermission": {
+		"message": "Do you want to allow SVG API input?",
+		"description": ""
+	},
+	"askForSVGReadoutPermission": {
+		"message": "Do you want to allow SVG API readout?",
+		"description": ""
+	},
+	"askForTextMetricsPermission": {
+		"message": "Do you want to allow the TextMetrics API?",
+		"description": ""
+	},
+	"askForTextMetricsInputPermission": {
+		"message": "Do you want to allow TextMetrics API input?",
+		"description": ""
+	},
+	"askForTextMetricsReadoutPermission": {
+		"message": "Do you want to allow TextMetrics API readout?",
+		"description": ""
+	},
+	"askForNavigatorPermission": {
+		"message": "Do you want to allow the navigator API?",
+		"description": ""
+	},
+	"askForNavigatorInputPermission": {
+		"message": "Do you want to allow navigator API input?",
+		"description": ""
+	},
+	"askForNavigatorReadoutPermission": {
+		"message": "Do you want to allow navigator API readout?",
+		"description": ""
+	},
+	"askForScreenPermission": {
+		"message": "Do you want to allow the screen API?",
+		"description": ""
+	},
+	"askForScreenInputPermission": {
+		"message": "Do you want to allow screen API input?",
+		"description": ""
+	},
+	"askForScreenReadoutPermission": {
+		"message": "Do you want to allow screen API readout?",
+		"description": ""
+	},
+	"askOnlyOnce_title": {
+		"message": "Ask only once",
+		"description": ""
+	},
+	"askOnlyOnce_description": {
+		"message": "When CanvasBlocker's block mode is set to 'ask permission' or 'ask permission for readout API', a confirm message will appear every time a page tries to access the API or readout API. This setting tries to display the confirm message only once for each page regardless of how many times the page tries to access the API. Nevertheless, multiple confirm messages may still be displayed on some pages.\n\nNo: asking every time\n\nIndividual: each API type (context, input, readout) has to be confirmed separately\n\nCombined: all API types get confirmed together",
+		"description": ""
+	},
+	"askOnlyOnce_options.no": {
+		"message": "no",
+		"description": ""
+	},
+	"askOnlyOnce_options.individual": {
+		"message": "individual",
+		"description": ""
+	},
+	"askOnlyOnce_options.combined": {
+		"message": "combined",
+		"description": ""
+	},
+	"askDenyMode_title": {
+		"message": "Ask deny mode",
+		"description": ""
+	},
+	"askDenyMode_description": {
+		"message": "Which mode shall be used when the permission is denied.",
+		"description": ""
+	},
+	"askDenyMode_options.block": {
+		"message": "block",
+		"description": ""
+	},
+	"askDenyMode_options.fake": {
+		"message": "fake",
+		"description": ""
+	},
+	"showCanvasWhileAsking_title": {
+		"message": "Show canvas content",
+		"description": ""
+	},
+	"showCanvasWhileAsking_description": {
+		"message": "Shows the content of the canvas for which the permission is asked for, if possible.",
+		"description": ""
+	},
+	"showCanvasWhileAsking_message": {
+		"message": "The webpage wants to read the content of the following canvas:",
+		"description": ""
+	},
+	"blackList_description": {
+		"message": "Domains or URLs where all APIs shall always be blocked. To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"blackList_title": {
+		"message": "Blacklist",
+		"description": ""
+	},
+	"blockMode_description": {
+		"message": "",
+		"description": ""
+	},
+	"blockMode_urlSpecific": {
+		"message": "To set individual block modes for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired block mode.",
+		"description": ""
+	},
+	"blockMode_options.allowEverything": {
+		"message": "allow everything",
+		"description": ""
+	},
+	"blockMode_options.block": {
+		"message": "allow only whitelist",
+		"description": ""
+	},
+	"blockMode_options.ask": {
+		"message": "ask for permission",
+		"description": ""
+	},
+	"blockMode_options.blockEverything": {
+		"message": "block everything",
+		"description": ""
+	},
+	"blockMode_options.allow": {
+		"message": "block only blacklist",
+		"description": ""
+	},
+	"blockMode_options.fake": {
+		"message": "fake",
+		"description": ""
+	},
+	"blockMode_title": {
+		"message": "Block mode",
+		"description": ""
+	},
+	"protectedCanvasPart_title": {
+		"message": "Protected part of the canvas API",
+		"description": ""
+	},
+	"protectedCanvasPart_description": {
+		"message": "nothing: no features of the canvas API are protected.\n\nreadout: the readout features of the canvas API are protected.\n\ninput: the input features of the canvas API are protected. With blocking mode \"fake\" the drawn pixels get modified slightly when displaying text. This makes the detection of the add-on harder but is less secure. With WebGL canvases the behaviour is identical to \"readout\".\n\neverything: both the readout and input features are protected. It's not recommended to use this with \"fake\" block mode as it increases the probability to be detected.",
+		"description": ""
+	},
+	"protectedCanvasPart_urlSpecific": {
+		"message": "To protect individual parts for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and select the desired part.",
+		"description": ""
+	},
+	"protectedCanvasPart_options.nothing": {
+		"message": "nothing",
+		"description": ""
+	},
+	"protectedCanvasPart_options.input": {
+		"message": "input",
+		"description": ""
+	},
+	"protectedCanvasPart_options.readout": {
+		"message": "readout",
+		"description": ""
+	},
+	"protectedCanvasPart_options.everything": {
+		"message": "everything",
+		"description": ""
+	},
+	"urlSettings_title": {
+		"message": "Site-specific values",
+		"description": ""
+	},
+	"urlSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"inputURL": {
+		"message": "Input domain or URL \"RegExp\":",
+		"description": ""
+	},
+	"minFakeSize_description": {
+		"message": "Canvases with a smaller or equal area than this number will not be faked. This is a parameter to prevent detection.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value above 100.",
+		"description": ""
+	},
+	"minFakeSize_title": {
+		"message": "Minimal fake size",
+		"description": ""
+	},
+	"maxFakeSize_description": {
+		"message": "Canvases with a bigger area than this number will not be faked. (Enter zero to disable.) This is a performance parameter that can prevent browser freezes and should be adjusted to the computing power of the device.\nCAUTION: This lowers the safety of the addon, therefore it is highly recommended not to set this value below 1 000 000.",
+		"description": ""
+	},
+	"maxFakeSize_title": {
+		"message": "Maximal fake size",
+		"description": ""
+	},
+	"rng_description": {
+		"message": "none (completely white): a completely white image is returned. The option \"Fake the alpha channel\" should be activated with this. CAUTION: Do not use this with the \"fake at input\" mode.\n\nnonpersistent: the random numbers will be determined freshly for each faking action. Keep in mind that many API protections have caches in place to prevent detection.\n\nconstant: variation of nonpersistent. But when altering canvas data same colored pixels also share the same color afterwards.\n\npersistent: the random number will only be determined once for every domain.",
+		"description": ""
+	},
+	"rng_options.persistent": {
+		"message": "persistent",
+		"description": ""
+	},
+	"rng_options.constant": {
+		"message": "constant",
+		"description": ""
+	},
+	"rng_options.nonPersistent": {
+		"message": "nonpersistent",
+		"description": ""
+	},
+	"rng_options.white": {
+		"message": "none (completely white)",
+		"description": ""
+	},
+	"rng_title": {
+		"message": "Random number generator",
+		"description": ""
+	},
+	"persistentRndStorage_title": {
+		"message": "Persistent storage",
+		"description": ""
+	},
+	"persistentRndStorage_description": {
+		"message": "Stores the data for the persistent random number generator for usage after restart.",
+		"description": ""
+	},
+	"storePersistentRnd_title": {
+		"message": "Store persistent data",
+		"description": ""
+	},
+	"storePersistentRnd_description": {
+		"message": "If data for the persistent random number generator shall be stored. Otherwise it is discarded on browser shutdown.",
+		"description": ""
+	},
+	"persistentRndClearInterval_title": {
+		"message": "Clear interval of the persistent data",
+		"description": ""
+	},
+	"persistentRndClearInterval_description": {
+		"message": "After the specified interval the persistent data is cleared automatically. (Enter zero to disable.)",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.seconds": {
+		"message": "seconds",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.minutes": {
+		"message": "minutes",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.hours": {
+		"message": "hours",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.days": {
+		"message": "days",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.weeks": {
+		"message": "weeks",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.months": {
+		"message": "months",
+		"description": ""
+	},
+	"persistentRndClearIntervalUnit_options.years": {
+		"message": "years",
+		"description": ""
+	},
+	"clearPersistentRnd_title": {
+		"message": "Clear persistent random storage",
+		"description": ""
+	},
+	"clearPersistentRnd_description": {
+		"message": "Deletes all data for the persistent random number generator.",
+		"description": ""
+	},
+	"clearPersistentRnd_label": {
+		"message": "Clear",
+		"description": ""
+	},
+	"clearPersistentRndForContainer_label": {
+		"message": "Clear container",
+		"description": ""
+	},
+	"clearPersistentRndForContainer_title": {
+		"message": "Select container",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_title": {
+		"message": "Share persistent randomness between domains",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_description": {
+		"message": "CAUTION: this setting makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"description": ""
+	},
+	"sharePersistentRndBetweenDomains_confirmMessage": {
+		"message": "Are you really sure you want to share the persistent randomness between domains?\nCAUTION: this makes the browser 100% trackable and is therefore a threat to your privacy.",
+		"description": ""
+	},
+	"ignoreFrequentColors_title": {
+		"message": "Ignore the most frequent colors",
+		"description": ""
+	},
+	"ignoreFrequentColors_description": {
+		"message": "Number of colors that shall not be faked per canvas. This is a parameter to prevent detection.\nCAUTION: This can reduce the performance of the addon because the color statistic has to be calculated for every image. Additional this can lower the safety of the addon, therefore it is highly recommended not to set this value above 3.",
+		"description": ""
+	},
+	"minColors_title": {
+		"message": "Minimal number of colors",
+		"description": ""
+	},
+	"minColors_description": {
+		"message": "Number of colors that a canvas must have to be faked.\nCAUTION: This can lower the safety of the addon, therefore it is highly recommended not to set this value above 10.",
+		"description": ""
+	},
+	"fakeAlphaChannel_title": {
+		"message": "Fake the alpha channel",
+		"description": ""
+	},
+	"fakeAlphaChannel_description": {
+		"message": "Activates the faking of the alpha channel (transparency).",
+		"description": ""
+	},
+	"webGLVendor_title": {
+		"message": "Reported webGL vendor",
+		"description": ""
+	},
+	"webGLVendor_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"description": ""
+	},
+	"webGLRenderer_title": {
+		"message": "Reported webGL renderer",
+		"description": ""
+	},
+	"webGLRenderer_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_title": {
+		"message": "Reported webGL unmasked vendor",
+		"description": ""
+	},
+	"webGLUnmaskedVendor_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked vendor\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_title": {
+		"message": "Reported webGL unmasked renderer",
+		"description": ""
+	},
+	"webGLUnmaskedRenderer_description": {
+		"message": "Value to be reported in the webGL function \"getParameter\" for the \"unmasked renderer\". Special values:\nLeave empty to use the original value\n\n{undefined}: returns undefined (#508)\n\n{false}: returns the boolean value false (#508)\n\n{empty}: returns an empty string (#508)\n\n{disabled}: returns null (#508)\n\n{random vendor}: returns a random vendor from the built-in list (#493)\n\n{random renderer}: returns a random renderer from the built-in list (#493)\n\n<xxx|yyy|zzz>: picks one of the given options xxx, yyy or zzz at random (arbitrary number of options) (#493)",
+		"description": ""
+	},
+	"useCanvasCache_title": {
+		"message": "Use canvas cache",
+		"description": ""
+	},
+	"useCanvasCache_description": {
+		"message": "Enables the canvas cache. This can prevent detection and increases the performance when small canvases are read several times, but decreases it for big canvases.",
+		"description": ""
+	},
+	"protectedAPIFeatures_title": {
+		"message": "Protected API features",
+		"description": ""
+	},
+	"protectedAPIFeatures_description": {
+		"message": "List of protected API features. When unticking a checkbox, this feature of the API will not be protected.",
+		"description": ""
+	},
+	"disableNotifications": {
+		"message": "disable notifications",
+		"description": ""
+	},
+	"showOptions": {
+		"message": "display settings",
+		"description": ""
+	},
+	"displayCallingStack": {
+		"message": "display calling stack",
+		"description": ""
+	},
+	"displayFullURL": {
+		"message": "display full URL",
+		"description": ""
+	},
+	"enableStackList_description": {
+		"message": "",
+		"description": ""
+	},
+	"enableStackList_title": {
+		"message": "Use file specific whitelist",
+		"description": ""
+	},
+	"preBlock": {
+		"message": "API blocked on {url} because CanvasBlocker settings were not loaded in time.",
+		"description": ""
+	},
+	"blocked": {
+		"message": "API blocked on {url}.",
+		"description": ""
+	},
+	"fakedReadout": {
+		"message": "Faked canvas readout on {url}",
+		"description": ""
+	},
+	"fakedAudioReadout": {
+		"message": "Faked audio readout on {url}",
+		"description": ""
+	},
+	"fakedHistoryReadout": {
+		"message": "Faked history readout on {url}",
+		"description": ""
+	},
+	"fakedWindowReadout": {
+		"message": "Faked window readout on {url}",
+		"description": ""
+	},
+	"fakedDOMRectReadout": {
+		"message": "Faked DOMRect readout on {url}",
+		"description": ""
+	},
+	"fakedSVGReadout": {
+		"message": "Faked SVG readout on {url}",
+		"description": ""
+	},
+	"fakedTextMetricsReadout": {
+		"message": "Faked TextMetrics readout on {url}",
+		"description": ""
+	},
+	"fakedNavigatorReadout": {
+		"message": "Faked navigator readout on {url}",
+		"description": ""
+	},
+	"fakedScreenReadout": {
+		"message": "Faked screen readout on {url}",
+		"description": ""
+	},
+	"fakedInput": {
+		"message": "Faked at input on {url}",
+		"description": ""
+	},
+	"ignoreList_description": {
+		"message": "Domains or URLs where no notifications shall be shown. To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"ignoreList_title": {
+		"message": "Ignore list",
+		"description": ""
+	},
+	"ignoredAPIs_title": {
+		"message": "Ignored APIs",
+		"description": ""
+	},
+	"ignoredAPIs_description": {
+		"message": "No notifications will be displayed for the selected APIs.",
+		"description": ""
+	},
+	"localFile": {
+		"message": "local file",
+		"description": ""
+	},
+	"ignorelistDomain": {
+		"message": "silence domain",
+		"description": ""
+	},
+	"ignorelistURL": {
+		"message": "ignore URL",
+		"description": ""
+	},
+	"selectIgnore": {
+		"message": "Select domain or URL to add to ignore list:",
+		"description": ""
+	},
+	"inputIgnore": {
+		"message": "Input domain or URL \"RegExp\" to add to ignore list:",
+		"description": ""
+	},
+	"inputIgnoreDomain": {
+		"message": "Input domain to add to ignore list:",
+		"description": ""
+	},
+	"inputIgnoreURL": {
+		"message": "Input URL \"RegExp\" to add to ignore list:",
+		"description": ""
+	},
+	"selectWhitelist": {
+		"message": "Select domain or URL to add to whitelist:",
+		"description": ""
+	},
+	"inputWhitelist": {
+		"message": "Input domain or URL \"RegExp\" to add to whitelist:",
+		"description": ""
+	},
+	"inputWhitelistDomain": {
+		"message": "Input domain to add to whitelist:",
+		"description": ""
+	},
+	"inputWhitelistURL": {
+		"message": "Input URL \"RegExp\" to add to whitelist:",
+		"description": ""
+	},
+	"selectSessionWhitelist": {
+		"message": "Select domain or URL to add to the session whitelist:",
+		"description": ""
+	},
+	"inputSessionWhitelist": {
+		"message": "Input domain or URL \"RegExp\" to add to the session whitelist:",
+		"description": ""
+	},
+	"inputSessionWhitelistDomain": {
+		"message": "Input domain to add to the session whitelist:",
+		"description": ""
+	},
+	"inputSessionWhitelistURL": {
+		"message": "Input URL \"RegExp\" to add to the session whitelist:",
+		"description": ""
+	},
+	"selectWhitelistScope": {
+		"message": "What is the scope of the whitelisting?",
+		"description": ""
+	},
+	"selectWhitelistType": {
+		"message": "What is the type of the whitelisting?",
+		"description": ""
+	},
+	"whitelistOnlyAPI": {
+		"message": "Whitelist only the {api}",
+		"description": ""
+	},
+	"whitelistAllAPIs": {
+		"message": "Whitelist all APIs",
+		"description": ""
+	},
+	"settings": {
+		"message": "settings",
+		"description": ""
+	},
+	"showCallingFile_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCallingFile_title": {
+		"message": "Show calling file",
+		"description": ""
+	},
+	"showCompleteCallingStack_description": {
+		"message": "",
+		"description": ""
+	},
+	"showCompleteCallingStack_title": {
+		"message": "Display complete calling stack",
+		"description": ""
+	},
+	"showNotifications_description": {
+		"message": "Shows a notification icon in the address bar when something gets blocked or faked.",
+		"description": ""
+	},
+	"showNotifications_urlSpecific": {
+		"message": "To deactivate notifications for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"showNotifications_title": {
+		"message": "Show notification icon",
+		"description": ""
+	},
+	"highlightPageAction_description": {
+		"message": "Highlight the page action icon for better visibility.",
+		"description": ""
+	},
+	"highlightPageAction_urlSpecific": {
+		"message": "",
+		"description": ""
+	},
+	"highlightPageAction_title": {
+		"message": "Highlight page action icon",
+		"description": ""
+	},
+	"highlightPageAction_options.none": {
+		"message": "no highlight",
+		"description": ""
+	},
+	"highlightPageAction_options.color": {
+		"message": "color",
+		"description": ""
+	},
+	"highlightPageAction_options.blink": {
+		"message": "blink",
+		"description": ""
+	},
+	"displayBadge_description": {
+		"message": "",
+		"description": ""
+	},
+	"displayBadge_title": {
+		"message": "Display badge",
+		"description": ""
+	},
+	"highlightBrowserAction_description": {
+		"message": "",
+		"description": ""
+	},
+	"highlightBrowserAction_urlSpecific": {
+		"message": "",
+		"description": ""
+	},
+	"highlightBrowserAction_title": {
+		"message": "Change toolbar icon on notification",
+		"description": ""
+	},
+	"highlightBrowserAction_options.none": {
+		"message": "change nothing",
+		"description": ""
+	},
+	"highlightBrowserAction_options.color": {
+		"message": "change color",
+		"description": ""
+	},
+	"highlightBrowserAction_options.blink": {
+		"message": "blink",
+		"description": ""
+	},
+	"sourceOutput": {
+		"message": "Calling file",
+		"description": ""
+	},
+	"stackEntryOutput": {
+		"message": "{url} line {line} column {column}",
+		"description": ""
+	},
+	"stackList_description": {
+		"message": "JS files which are allowed to use all APIs. The input has to be in JSON format. Example: [{\"url\": \"http://domain/file1.js\"}, {\"url\": \"http://domain/file2.js\", \"line\": 1, \"column\": 4, \"stackPosition\": -3}]",
+		"description": ""
+	},
+	"stackList_title": {
+		"message": "File specific whitelist",
+		"description": ""
+	},
+	"whiteList_title": {
+		"message": "Whitelist",
+		"description": ""
+	},
+	"whiteList_description": {
+		"message": "Domains or URLs which shall be allowed to use all APIs. To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"whitelist": {
+		"message": "whitelist",
+		"description": ""
+	},
+	"whitelistDomain": {
+		"message": "whitelist domain",
+		"description": ""
+	},
+	"whitelistURL": {
+		"message": "whitelist URL",
+		"description": ""
+	},
+	"ignorelist": {
+		"message": "ignore",
+		"description": ""
+	},
+	"whitelistTemporarily": {
+		"message": "whitelist temporarily",
+		"description": ""
+	},
+	"inspectWhitelist": {
+		"message": "inspect whitelist",
+		"description": ""
+	},
+	"sessionWhiteList_title": {
+		"message": "Session whitelist",
+		"description": ""
+	},
+	"sessionWhiteList_description": {
+		"message": "Domains or URLs which shall be allowed to use all APIs during the current session (i.e. temporarily whitelisted). To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"sessionWhiteList_search": {
+		"message": "temporary",
+		"description": ""
+	},
+	"whitelistDomainTemporarily": {
+		"message": "whitelist domain temporarily",
+		"description": ""
+	},
+	"whitelistURLTemporarily": {
+		"message": "whitelist URL temporarily",
+		"description": ""
+	},
+	"storeNotificationData_title": {
+		"message": "Store detail data of the notifications",
+		"description": ""
+	},
+	"storeNotificationData_description": {
+		"message": "",
+		"description": ""
+	},
+	"storeImageForInspection_title": {
+		"message": "Store image for inspection",
+		"description": ""
+	},
+	"storeImageForInspection_description": {
+		"message": "Enables the storage of the content of the faked canvas.\nCAUTION: This may lead to a lot of memory consumption.",
+		"description": ""
+	},
+	"protectAudio_title": {
+		"message": "Protect audio API",
+		"description": ""
+	},
+	"protectAudio_description": {
+		"message": "If the audio API shall be protected as well",
+		"description": ""
+	},
+	"protectAudio_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"audioFakeRate_title": {
+		"message": "Buffer fake rate",
+		"description": ""
+	},
+	"audioFakeRate_description": {
+		"message": "How many of the values per read request shall be faked.",
+		"description": ""
+	},
+	"audioFakeRate_options.1": {
+		"message": "1 value",
+		"description": ""
+	},
+	"audioFakeRate_options.10": {
+		"message": "10 values",
+		"description": ""
+	},
+	"audioFakeRate_options.100": {
+		"message": "100 values",
+		"description": ""
+	},
+	"audioFakeRate_options.1000": {
+		"message": "1000 values",
+		"description": ""
+	},
+	"audioFakeRate_options.0.1%": {
+		"message": "0.1% of the values",
+		"description": ""
+	},
+	"audioFakeRate_options.1%": {
+		"message": "1% of the values",
+		"description": ""
+	},
+	"audioFakeRate_options.10%": {
+		"message": "10% of the values",
+		"description": ""
+	},
+	"audioFakeRate_options.100%": {
+		"message": "100% of the values",
+		"description": ""
+	},
+	"audioNoiseLevel_title": {
+		"message": "Noise level",
+		"description": ""
+	},
+	"audioNoiseLevel_description": {
+		"message": "",
+		"description": ""
+	},
+	"audioNoiseLevel_options.minimal": {
+		"message": "minimal",
+		"description": ""
+	},
+	"audioNoiseLevel_options.low": {
+		"message": "low",
+		"description": ""
+	},
+	"audioNoiseLevel_options.medium": {
+		"message": "medium",
+		"description": ""
+	},
+	"audioNoiseLevel_options.high": {
+		"message": "high",
+		"description": ""
+	},
+	"audioNoiseLevel_options.maximal": {
+		"message": "maximal",
+		"description": ""
+	},
+	"useAudioCache_title": {
+		"message": "Use audio cache",
+		"description": ""
+	},
+	"useAudioCache_description": {
+		"message": "Enables the audio cache. This can prevent detection but decreases the performance.",
+		"description": ""
+	},
+	"useAudioCache_urlSpecific": {
+		"message": "Some pages use a very poorly written audio fingerprinting script which will cause Firefox to slow down. To disable the cache for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"audioUseFixedIndices_title": {
+		"message": "Use fixed indices",
+		"description": ""
+	},
+	"audioUseFixedIndices_description": {
+		"message": "If some of the used indices shall always be faked.",
+		"description": ""
+	},
+	"audioFixedIndices_title": {
+		"message": "Fixed indices",
+		"description": ""
+	},
+	"audioFixedIndices_description": {
+		"message": "The indices that are always faked. To add multiple entries, separate them by commas.",
+		"description": ""
+	},
+	"historyLengthThreshold_title": {
+		"message": "History length threshold",
+		"description": ""
+	},
+	"historyLengthThreshold_description": {
+		"message": "Maximal length of the history that is reported to the website.",
+		"description": ""
+	},
+	"historyLengthThreshold_urlSpecific": {
+		"message": "To change this value for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set a different value.",
+		"description": ""
+	},
+	"protectWindow_title": {
+		"message": "Protect window API",
+		"description": ""
+	},
+	"protectWindow_description": {
+		"message": "window.opener and window.name will be protected. This can render some webpages unusable.",
+		"description": ""
+	},
+	"protectWindow_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"protectWindow_askReCaptchaException": {
+		"message": "Protecting the window API breaks reCAPTCHA. Do you want to allow the window.name API in embedded pages which will make it work again?",
+		"description": ""
+	},
+	"allowWindowNameInFrames_title": {
+		"message": "Allow window.name in frames",
+		"description": ""
+	},
+	"allowWindowNameInFrames_description": {
+		"message": "The window.name API is not that dangerous in the context of embedded pages and it is used there for legitimate reasons (e.g. reCAPTCHA). This setting will allow these usages.",
+		"description": ""
+	},
+	"allowWindowNameInFrames_urlSpecific": {
+		"message": "To allow this only for specific websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and set its checkmark.",
+		"description": ""
+	},
+	"protectDOMRect_title": {
+		"message": "Protect DOMRect API",
+		"description": ""
+	},
+	"protectDOMRect_description": {
+		"message": "This protects against the \"getClientRects()\" fingerprinting and several similar methods.",
+		"description": ""
+	},
+	"protectDOMRect_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"domRectIntegerFactor_title": {
+		"message": "DOMRect integer factor",
+		"description": ""
+	},
+	"domRectIntegerFactor_description": {
+		"message": "Some fraction of a pixel can be controlled by CSS. To prevent detection, values of a DOMRect that multiplied with this factor are integers will not be altered.",
+		"description": ""
+	},
+	"protectSVG_title": {
+		"message": "Protect SVG API",
+		"description": ""
+	},
+	"protectSVG_description": {
+		"message": "This protects against fingerprinting using SVGs.",
+		"description": ""
+	},
+	"protectSVG_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"protectTextMetrics_title": {
+		"message": "Protect TextMetrics API",
+		"description": ""
+	},
+	"protectTextMetrics_description": {
+		"message": "This protects against the \"measureText()\" fingerprinting which can be used to cross validate DOMRect values.",
+		"description": ""
+	},
+	"protectTextMetrics_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"protectNavigator_title": {
+		"message": "Protect navigator API",
+		"description": ""
+	},
+	"protectNavigator_description": {
+		"message": "This page allows for changes in the navigator API. Enabling this protection does not change anything by default. Open the navigator settings to specify the changes you want to have there.",
+		"description": ""
+	},
+	"protectNavigator_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"openNavigatorSettings_title": {
+		"message": "Navigator settings",
+		"description": ""
+	},
+	"openNavigatorSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"openNavigatorSettings_label": {
+		"message": "Open",
+		"description": ""
+	},
+	"navigatorSettings_title": {
+		"message": "CanvasBlocker navigator settings",
+		"description": ""
+	},
+	"navigatorSettings_description": {
+		"message": "On this page you can set the navigator settings. If using a preset you should always use an operating system and browser preset. After selecting these you can still make modifications.",
+		"description": ""
+	},
+	"navigatorSettings_disclaimer": {
+		"message": "CAUTION: the actual browser in use cannot be faked entirely as there is a multitude of ways to detect it. E.g. feature tests and browser specific rendering of HTML elements will always leak.",
+		"description": ""
+	},
+	"navigatorSettings_contextualIdentities": {
+		"message": "Settings for the container {select} are shown.",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.os": {
+		"message": "Operating system presets",
+		"description": ""
+	},
+	"navigatorSettings_presetSection.browser": {
+		"message": "Browser presets",
+		"description": ""
+	},
+	"navigatorSettings_values": {
+		"message": "Navigator values",
+		"description": ""
+	},
+	"navigatorSettings_reset": {
+		"message": "Reset",
+		"description": ""
+	},
+	"protectScreen_title": {
+		"message": "Protect screen API",
+		"description": ""
+	},
+	"protectScreen_description": {
+		"message": "This protects against fingerprinting attempts including the screen size.",
+		"description": ""
+	},
+	"protectScreen_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"screenSize_title": {
+		"message": "Screen size",
+		"description": ""
+	},
+	"screenSize_description": {
+		"message": "If this is set with a value \"...x...\" the specified dimensions will be reported as the screen size.",
+		"description": ""
+	},
+	"screenSize_urlSpecific": {
+		"message": "To provide specific sizes for certain websites, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and enter the desired value.",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_title": {
+		"message": "Fake minimal screen size",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_description": {
+		"message": "Use a minimal screen size from the following set that can fit the inner window dimensions. Screen sizes: 1366x768, 1440x900, 1600x900, 1920x1080, 4096x2160, 8192x4320",
+		"description": ""
+	},
+	"fakeMinimalScreenSize_urlSpecific": {
+		"message": "To exclude specific websites from the faking, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"theme_title": {
+		"message": "Theme",
+		"description": ""
+	},
+	"theme_description": {
+		"message": "The automatic theme switches to dark if the system uses a dark theme (requires Firefox >= 67)",
+		"description": ""
+	},
+	"theme_options.auto": {
+		"message": "automatic",
+		"description": ""
+	},
+	"theme_options.default": {
+		"message": "default",
+		"description": ""
+	},
+	"theme_options.light": {
+		"message": "light",
+		"description": ""
+	},
+	"theme_options.dark": {
+		"message": "dark",
+		"description": ""
+	},
+	"theme_options.colorful": {
+		"message": "colorful",
+		"description": ""
+	},
+	"theme_options.none": {
+		"message": "none",
+		"description": ""
+	},
+	"blockDataURLs_title": {
+		"message": "Block data URL pages",
+		"description": ""
+	},
+	"blockDataURLs_description": {
+		"message": "Data URL pages cannot be protected against fingerprinting (see https://bugzilla.mozilla.org/show_bug.cgi?id=1475831). Blocking them prevents the real fingerprint to reach any server.",
+		"description": ""
+	},
+	"blockDataURLs_urlSpecific": {
+		"message": "To exclude specific websites from this protection, click on the black arrow to open the menu, add the domain or URL by clicking on \"+\" and remove its checkmark.",
+		"description": ""
+	},
+	"showReleaseNotes_title": {
+		"message": "Release notes",
+		"description": ""
+	},
+	"showReleaseNotes_description": {
+		"message": "",
+		"description": ""
+	},
+	"showReleaseNotes_label": {
+		"message": "Show",
+		"description": ""
+	},
+	"logLevel_title": {
+		"message": "Logging level",
+		"description": ""
+	},
+	"logLevel_description": {
+		"message": "To find the cause of an error, detailed logging of the addon activities is helpful. This parameter controls the level of detail of the logging.\n\nThe logging can be viewed in the Browser Console (Ctrl+Shift+J) and the Web Console (Ctrl+Shift+K).",
+		"description": ""
+	},
+	"logLevel_options.0": {
+		"message": "none",
+		"description": ""
+	},
+	"logLevel_options.1": {
+		"message": "error",
+		"description": ""
+	},
+	"logLevel_options.25": {
+		"message": "warning",
+		"description": ""
+	},
+	"logLevel_options.50": {
+		"message": "message",
+		"description": ""
+	},
+	"logLevel_options.75": {
+		"message": "notice",
+		"description": ""
+	},
+	"logLevel_options.100": {
+		"message": "verbose",
+		"description": ""
+	},
+	"exportSettings_title": {
+		"message": "CanvasBlocker settings export",
+		"description": ""
+	},
+	"exportSettings_description": {
+		"message": "This allows you to copy your current settings. You can also paste and modify them here. If something is invalid the textarea will get a red background and the change is not stored.",
+		"description": ""
+	},
+	"settingControlling_title": {
+		"message": "Setting controlling",
+		"description": ""
+	},
+	"settingControlling_description": {
+		"message": "",
+		"description": ""
+	},
+	"openSettingSanitation_label": {
+		"message": "Setting sanitation",
+		"description": ""
+	},
+	"inspectWhitelist_label": {
+		"message": "Inspect whitelist",
+		"description": ""
+	},
+	"openSettingPresets_title": {
+		"message": "Presets",
+		"description": ""
+	},
+	"openSettingPresets_description": {
+		"message": "This opens the preset page that was shown upon installation. The presets are collections of setting values for some common use cases of CanvasBlocker.",
+		"description": ""
+	},
+	"openSettingPresets_label": {
+		"message": "Open",
+		"description": ""
+	},
+	"inspectSettings_label": {
+		"message": "Inspect",
+		"description": ""
+	},
+	"saveSettings_label": {
+		"message": "Save",
+		"description": ""
+	},
+	"loadSettings_label": {
+		"message": "Load",
+		"description": ""
+	},
+	"resetSettings_title": {
+		"message": "Reset settings",
+		"description": ""
+	},
+	"resetSettings_description": {
+		"message": "",
+		"description": ""
+	},
+	"resetSettings_label": {
+		"message": "Reset",
+		"description": ""
+	},
+	"resetSettings_confirm": {
+		"message": "Are you sure you want to reset all settings?",
+		"description": ""
+	},
+	"browserAction_settings": {
+		"message": "Settings",
+		"description": ""
+	},
+	"browserAction_faq": {
+		"message": "FAQ",
+		"description": ""
+	},
+	"browserAction_test": {
+		"message": "Test",
+		"description": ""
+	},
+	"browserAction_review": {
+		"message": "Review",
+		"description": ""
+	},
+	"browserAction_reportIssue": {
+		"message": "Report issue",
+		"description": ""
+	},
+	"sanitation_title": {
+		"message": "Setting sanitation",
+		"description": ""
+	},
+	"sanitation_description": {
+		"message": "This page helps to find misconfigurations in the CanvasBlocker settings. It also gives advice on suboptimal settings. But it is not recommended to blindly correct all suggestions.",
+		"description": ""
+	},
+	"sanitation_nothingToComplain": {
+		"message": "Nothing to complain.",
+		"description": ""
+	},
+	"sanitation_ruleset.unnecessaryURLValue": {
+		"message": "Unnecessary URL values",
+		"description": ""
+	},
+	"sanitation_ruleset.disabledFeatures": {
+		"message": "Disabled features",
+		"description": ""
+	},
+	"sanitation_ruleset.blockMode": {
+		"message": "Block mode",
+		"description": ""
+	},
+	"sanitation_ruleset.thresholds": {
+		"message": "Thresholds",
+		"description": ""
+	},
+	"sanitation_ruleset.performance": {
+		"message": "Performance",
+		"description": ""
+	},
+	"sanitation_ruleset.privacy": {
+		"message": "Privacy",
+		"description": ""
+	},
+	"sanitation_error.unnecessaryURLValue": {
+		"message": "URL value for \"{url}\" is the same as the global setting for \"{setting-title}\".",
+		"description": ""
+	},
+	"sanitation_resolution.removeURLValue": {
+		"message": "remove URL value",
+		"description": ""
+	},
+	"sanitation_error.disabledFeatures": {
+		"message": "All features of {api} are disabled but the protection is enabled.",
+		"description": ""
+	},
+	"sanitation_error.disabledSomeFeatures": {
+		"message": "Some features of {api} are disabled. This should only be done for testing or if you really know what the features are doing.",
+		"description": ""
+	},
+	"sanitation_resolution.disableMainFlag": {
+		"message": "disable main flag",
+		"description": ""
+	},
+	"sanitation_resolution.enableFeatures": {
+		"message": "enable features",
+		"description": ""
+	},
+	"sanitation_error.badBlockMode": {
+		"message": "It is recommended to use the \"fake\" or \"ask\" blocking modes.",
+		"description": ""
+	},
+	"sanitation_resolution.switchToFake": {
+		"message": "switch to \"fake\"",
+		"description": ""
+	},
+	"sanitation_error.blockModeVsProtection": {
+		"message": "With blocking mode \"{blockMode}\" the {api} protection is not working.",
+		"description": ""
+	},
+	"sanitation_resolution.disableFlag": {
+		"message": "disable \"{flag}\"",
+		"description": ""
+	},
+	"sanitation_error.fakeInputWithWhiteRng": {
+		"message": "Do not use white random number generator with \"{blockMode}\" and protecting \"{protectedCanvasPart}\".",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectReadout": {
+		"message": "switch to protect readout",
+		"description": ""
+	},
+	"sanitation_resolution.switchToNonPersistentRng": {
+		"message": "switch to \"nonpersistent\" rng",
+		"description": ""
+	},
+	"sanitation_error.fakeEverythingInCanvas": {
+		"message": "Do not use protect \"{protectedCanvasPart}\" in blocking mode \"{blockMode}\".",
+		"description": ""
+	},
+	"sanitation_resolution.switchToProtectInput": {
+		"message": "switch to protect input",
+		"description": ""
+	},
+	"sanitation_error.valueTooLow": {
+		"message": "\"{setting}\" should not be lower than {value}.",
+		"description": ""
+	},
+	"sanitation_error.valueTooHigh": {
+		"message": "\"{setting}\" should not be higher than {value}.",
+		"description": ""
+	},
+	"sanitation_resolution.setTo": {
+		"message": "set to {value}",
+		"description": ""
+	},
+	"sanitation_error.storeNotificationData": {
+		"message": "Storing notification data may lead to slow performance.",
+		"description": ""
+	},
+	"sanitation_error.storeImage": {
+		"message": "Storing the image for inspection has a high RAM footprint.",
+		"description": ""
+	},
+	"sanitation_error.doNotSharePersistentRndBetweenDomains": {
+		"message": "Do not share persistent randomness between domains because this makes the browser 100% trackable.",
+		"description": ""
+	},
+	"sanitation_error.customScreenSize": {
+		"message": "Do not use a custom screen size as it makes the browser more trackable.",
+		"description": ""
+	},
+	"whitelist_inspection_title": {
+		"message": "CanvasBlocker whitelist inspection",
+		"description": ""
+	},
+	"whitelist_inspection_description": {
+		"message": "This shows which fingerprint protections are active for specified sites.{newline}{newline}Unchecked means that the site can use that particular function in an unaltered manner. This includes it could use it to (partially) fingerprint your browser.{newline}Checked means that CanvasBlocker provides a protection which makes it harder for the site to uniquely identifying you.",
+		"description": ""
+	},
+	"whitelist_all_apis": {
+		"message": "All APIs",
+		"description": ""
+	},
+	"presets": {
+		"message": "Presets",
+		"description": ""
+	},
+	"presets_title": {
+		"message": "CanvasBlocker presets",
+		"description": ""
+	},
+	"presets_installNotice": {
+		"message": "{image:../icons/icon.svg}Thanks for installing CanvasBlocker. To adjust it to your needs you can apply some presets. For further customization you can open the {link:options:options.html} page. There you can also open this preset page later.",
+		"description": ""
+	},
+	"presets_introduction": {
+		"message": "These are some setting presets to fit different people's needs. The values in brackets are the current state of the setting. You can apply multiple presets after each other but some settings might be overwritten by the later applied one.",
+		"description": ""
+	},
+	"preset_default_title": {
+		"message": "Default settings",
+		"description": ""
+	},
+	"preset_default_description": {
+		"message": "No special settings are applied.",
+		"description": ""
+	},
+	"preset_convenience_title": {
+		"message": "Convenient settings",
+		"description": ""
+	},
+	"preset_convenience_description": {
+		"message": "Apply some settings to make the browsing experience as convenient as possible. This includes whitelisting some sites.",
+		"description": ""
+	},
+	"preset_stealth_title": {
+		"message": "Stealth settings",
+		"description": ""
+	},
+	"preset_stealth_description": {
+		"message": "Configures CanvasBlocker to be hard to detect. This might lead to high CPU usage and might slow down the browser.",
+		"description": ""
+	},
+	"preset_max_protection_title": {
+		"message": "Maximum protection",
+		"description": ""
+	},
+	"preset_max_protection_description": {
+		"message": "Maximizes the protection against fingerprint extraction. These settings will break some pages, might slow down the browser a little bit and might enable sites to detect that CanvasBlocker is used. After applying this preset you should consider applying the reCAPTCHA preset as well.",
+		"description": ""
+	},
+	"preset_recaptcha_title": {
+		"message": "reCAPTCHA exception",
+		"description": ""
+	},
+	"preset_recaptcha_description": {
+		"message": "Protecting the window API breaks reCAPTCHA. This preset allows the usage of the window.name API in embedded pages which will make it work again.",
+		"description": ""
+	},
+	"extName": {
+		"message": "µमैट्रिक्स",
+		"description": ""
+	},
+	"extShortDesc": {
+		"message": "Point & click to forbid/allow any class of requests made by your browser. Use it to block scripts, iframes, ads, facebook, etc.",
+		"description": "this will be used as short description in web stores: MUST BE 132 characters OR LESS"
+	},
+	"dashboardPageName": {
+		"message": "µमैट्रिक्स— डैशबोर्ड",
+		"description": ""
+	},
+	"loggerPageName": {
+		"message": "uMatrix — Logger",
+		"description": "Title for the logger window"
+	},
+	"settingsPageName": {
+		"message": "सेटिंग्स",
+		"description": "a tab in dashboard"
+	},
+	"privacyPageName": {
+		"message": "गोपनीयता",
+		"description": "a tab in dashboard"
+	},
+	"statsPageName": {
+		"message": "आंकड़े",
+		"description": "a tab in dashboard"
+	},
+	"userRulesPageName": {
+		"message": "मेरे नियम",
+		"description": "a tab in dashboard"
+	},
+	"ubiquitousRulesPageName": {
+		"message": "Assets",
+		"description": "a tab in dashboard"
+	},
+	"rawSettingsPageName": {
+		"message": "More",
+		"description": "a tab in dashboard"
+	},
+	"aboutPageName": {
+		"message": "जानकारी",
+		"description": "a tab in dashboard"
+	},
+	"allPrettyName": {
+		"message": "सभी",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"cookiePrettyName": {
+		"message": "कुकीज़",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"cssPrettyName": {
+		"message": "सीएसएस",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"imagePrettyName": {
+		"message": "छवि",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"mediaPrettyName": {
+		"message": "media",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"pluginPrettyName": {
+		"message": "plugin",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"scriptPrettyName": {
+		"message": "लिपि",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"fetchPrettyName": {
+		"message": "fetch",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"framePrettyName": {
+		"message": "ढांचा",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"otherPrettyName": {
+		"message": "अन्य",
+		"description": "HAS TO FIT IN MATRIX HEADER!"
+	},
+	"matrixNoNetTrafficPrompt": {
+		"message": "No net traffic seen for this tab so far.",
+		"description": ""
+	},
+	"matrixLocalScopeTip": {
+		"message": "Select a local scope to see/create rules which apply only in that scope",
+		"description": "Tool tip for the local scope button"
+	},
+	"matrixGlobalScopeTip": {
+		"message": "Select the global scope to see/create rules which apply everywhere",
+		"description": "Tool tip for the global scope button"
+	},
+	"matrixMtxButtonTip": {
+		"message": "Disable/enable matrix filtering for this scope",
+		"description": "Tool tip for matrix button"
+	},
+	"matrixPersistButtonTip": {
+		"message": "Save all temporary changes for this scope",
+		"description": "Tool tip for the persist button"
+	},
+	"matrixRevertButtonTip": {
+		"message": "Revert temporary changes for this scope",
+		"description": "Tool tip for the revert local permission button"
+	},
+	"matrixReloadButton": {
+		"message": "Reload the page. \nPress Shift to bypass the browser cache.",
+		"description": "Tool tip for the reload button"
+	},
+	"matrix1stPartyLabel": {
+		"message": "1st-party",
+		"description": "1st-party"
+	},
+	"matrixBlacklistedHostnames": {
+		"message": "{{count}} blacklisted hostname(s)",
+		"description": "Appears in the metadata row of bottom-most group: **mind the limited width**"
+	},
+	"matrixSwitchNoMixedContent": {
+		"message": "Forbid mixed content",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixSwitchNoWorker": {
+		"message": "Forbid web workers",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixSwitchReferrerSpoof": {
+		"message": "Spoof <code>Referer</code> header",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixSwitchNoscriptSpoof": {
+		"message": "Spoof <code><noscript></code> tags",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixSwitchRevealCname": {
+		"message": "Reveal canonical names",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixRevertAllEntry": {
+		"message": "Revert all temporary changes",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixLoggerMenuEntry": {
+		"message": "Go to logger",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixDashboardMenuEntry": {
+		"message": "Go to dashboard",
+		"description": "A menu entry in the matrix popup"
+	},
+	"matrixNoTabFound": {
+		"message": "No web page found",
+		"description": "Displays in place of matrix when no data is found for the current page"
+	},
+	"matrixRecipeImportTip": {
+		"message": "Import rules",
+		"description": "Used as a tooltip for the recipe import button"
+	},
+	"matrixRecipeSaveTip": {
+		"message": "Save rules",
+		"description": "Used as a tooltip for the recipe padlock button"
+	},
+	"statsPageTitle": {
+		"message": "uMatrix &ndash; Statistics",
+		"description": ""
+	},
+	"statsPageGenericStats": {
+		"message": "Generic statistics",
+		"description": ""
+	},
+	"statsPageCookieHeadersFoiled": {
+		"message": "<a href='https://en.wikipedia.org/wiki/HTTP_cookie'>HTTP cookie</a> headers foiled: {{count}}",
+		"description": ""
+	},
+	"statsPageRefererHeadersFoiled": {
+		"message": "<a href='https://en.wikipedia.org/wiki/HTTP_referer'>HTTP referer</a> headers foiled: {{count}}",
+		"description": ""
+	},
+	"statsPageHyperlinkAuditingFoiled": {
+		"message": "<a href='https://html.spec.whatwg.org/multipage/semantics.html#hyperlink-auditing'>Hyperlink auditing</a> attempts foiled: {{count}}",
+		"description": ""
+	},
+	"statsPageCookiesRemoved": {
+		"message": "Local cookies removed: {{count}}",
+		"description": ""
+	},
+	"statsPageLocalStoragesCleared": {
+		"message": "<a href='http://diveintohtml5.info/storage.html'>Local storages</a> emptied: {{count}}",
+		"description": ""
+	},
+	"statsPageBrowserCacheCleared": {
+		"message": "Browser caches cleared: {{count}}",
+		"description": ""
+	},
+	"statsPageDetailedStats": {
+		"message": "Detailed statistics",
+		"description": ""
+	},
+	"statsPageDetailedAllPages": {
+		"message": "सभी",
+		"description": ""
+	},
+	"statsPageDetailedBehindTheScenePage": {
+		"message": "Behind the scene",
+		"description": ""
+	},
+	"statsPageOverview": {
+		"message": "संक्षिप्त अवलोकन",
+		"description": ""
+	},
+	"statsPageRequests": {
+		"message": "Requests",
+		"description": "header for the stat type column"
+	},
+	"statsPageAllowed": {
+		"message": "अनुमति है",
+		"description": "header for the allowed requests column"
+	},
+	"statsPageBlocked": {
+		"message": "Blocked",
+		"description": "header for the blocked requests column"
+	},
+	"statsPageAll": {
+		"message": "All",
+		"description": ""
+	},
+	"statsPagePages": {
+		"message": "Pages",
+		"description": ""
+	},
+	"statsPageCookies": {
+		"message": "Cookies",
+		"description": ""
+	},
+	"statsPageCSS": {
+		"message": "CSS",
+		"description": ""
+	},
+	"statsPageImages": {
+		"message": "Images",
+		"description": ""
+	},
+	"statsPagePlugins": {
+		"message": "Plugins",
+		"description": ""
+	},
+	"statsPageScripts": {
+		"message": "Scripts",
+		"description": ""
+	},
+	"statsPageXHRs": {
+		"message": "XHRs",
+		"description": ""
+	},
+	"statsPageFrames": {
+		"message": "Frames",
+		"description": ""
+	},
+	"statsPageOthers": {
+		"message": "Others",
+		"description": ""
+	},
+	"statsPageDetailed": {
+		"message": "अनुरोध प्रवेश",
+		"description": ""
+	},
+	"statsPageLogSizePrompt1": {
+		"message": "पिछले याद रखें",
+		"description": "First part of Remember the last [n] HTTP requests per page"
+	},
+	"statsPageLogSizePrompt2": {
+		"message": "HTTP requests <b>per page</b>",
+		"description": "Second part of Remember the last [n] HTTP requests per page"
+	},
+	"statsPageLogSizeHelp": {
+		"message": "<p>You can inspect details of the most recent raw HTTP requests which have been made by a web page (see below).</p><p>This is mostly useful to advanced users who want to investigate exactly what a web page has been doing. But logging these HTTP requests requires memory, and if you don't care about this technical information, then memory is being wasted.</p><p>Hence this field which lets you adjust the maximum number of the most recent HTTP requests which are to be logged for further inspection.</p><p>Enter &ldquo;<code>0</code>&rdquo; to turn off detailed logging (and consequently reduce the memory footprint of <i>uMatrix</i>).</p>",
+		"description": "To help user understand the purpose of the log size value"
+	},
+	"statsPageRefresh": {
+		"message": "रिफ्रेश",
+		"description": ""
+	},
+	"logAll": {
+		"message": "All",
+		"description": "Appears in the logger's tab selector"
+	},
+	"logBehindTheScene": {
+		"message": "Tabless",
+		"description": "Pretty name for behind-the-scene network requests"
+	},
+	"loggerCurrentTab": {
+		"message": "Current tab",
+		"description": "Appears in the logger's tab selector"
+	},
+	"loggerReloadTip": {
+		"message": "Reload the tab content",
+		"description": "Tooltip for the reload button in the logger page"
+	},
+	"loggerFilterInputPlaceholder": {
+		"message": "filter expression(s)",
+		"description": "Appears in the input filed where filter expressions are entered"
+	},
+	"loggerEntryCookieDeleted": {
+		"message": "cookie deleted: {{value}}",
+		"description": "An entry for when a cookie is deleted"
+	},
+	"loggerEntryDeleteCookieError": {
+		"message": "failed to delete cookie: {{value}}",
+		"description": "An entry for when the browser cache is cleared"
+	},
+	"loggerEntryBrowserCacheCleared": {
+		"message": "browser cache cleared",
+		"description": "An entry for when a cookie can't be deleted"
+	},
+	"loggerEntryAssetUpdated": {
+		"message": "asset updated: {{value}}",
+		"description": "An entry for when an asset was updated"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Toggle logger filtering",
+		"description": "Tooltip for the row filterer button in the logger page"
+	},
+	"logFilterPrompt": {
+		"message": "filter logger content",
+		"description": "Placeholder string for logger output filtering input field"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Toggle the popup panel",
+		"description": "Tooltip for the popup panel button in the logger page"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin wiki: The logger",
+		"description": "Tooltip for the top-right info label in the logger page"
+	},
+	"loggerClearTip": {
+		"message": "Clear logger",
+		"description": "Tooltip for the eraser in the logger page; used to blank the content of the logger"
+	},
+	"loggerPauseTip": {
+		"message": "Pause logger (discard all incoming data)",
+		"description": "Tooltip for the pause button in the logger page"
+	},
+	"loggerUnpauseTip": {
+		"message": "Unpause logger",
+		"description": "Tooltip for the play button in the logger page"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Logger filtering options",
+		"description": "Tooltip for the button to bring up logger output filtering options"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Not",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "blocked",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerRowFiltererBuiltinInfo": {
+		"message": "info",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "1st-party",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "3rd-party",
+		"description": "A keyword in the built-in row filtering expression"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Details",
+		"description": "Small header to identify the 'Details' pane for a specific logger entry"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Context",
+		"description": "Label to identify a context field (typically a hostname)"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Partyness",
+		"description": "Label to identify a field providing partyness information"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Type",
+		"description": "Label to identify the type of an entry"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL",
+		"description": "Label to identify the URL of an entry"
+	},
+	"loggerEntryRuleHeader": {
+		"message": "Rule",
+		"description": "Small header to identify the 'Rule' pane for a specific logger entry"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Logger entries which do not fulfill all three conditions below will be automatically discarded:",
+		"description": "Logger setting: A sentence to describe the purpose of the settings below"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Preserve entries from the last {{input}} minutes",
+		"description": "A logger setting"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Preserve at most {{input}} page loads per tab",
+		"description": "A logger setting"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Preserve at most {{input}} entries per tab",
+		"description": "A logger setting"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Use {{input}} lines per entry in vertically expanded mode",
+		"description": "A logger setting"
+	},
+	"loggerExportFormatList": {
+		"message": "List",
+		"description": "Label for radio-button to pick export format"
+	},
+	"loggerExportFormatTable": {
+		"message": "Table",
+		"description": "Label for radio-button to pick export format"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Plain",
+		"description": "Label for radio-button to pick export text format"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown",
+		"description": "Label for radio-button to pick export text format"
+	},
+	"settingsPageTitle": {
+		"message": "µMatrix &ndash; सेटिंग्स",
+		"description": ""
+	},
+	"settingsMatrixDisplayHeader": {
+		"message": "दिखावट",
+		"description": "header for matrix settings used in Settings page"
+	},
+	"settingsMatrixDisplayTextSizePrompt": {
+		"message": "पाठ का आकार",
+		"description": ""
+	},
+	"settingsIconBadgeEnabled": {
+		"message": "Show the number of blocked resources on the icon",
+		"description": ""
+	},
+	"settingsMatrixDisplayColorBlind": {
+		"message": "Color-blind friendly",
+		"description": ""
+	},
+	"settingsMatrixConvenienceHeader": {
+		"message": "Convenience",
+		"description": "English: Convenience"
+	},
+	"settingsDefaultScopeLevel": {
+		"message": "Default scope level:",
+		"description": "Label for default scope level selector in Settings pane"
+	},
+	"settingsDefaultScopeLevel0": {
+		"message": "Global",
+		"description": "Scope will be global"
+	},
+	"settingsDefaultScopeLevel1": {
+		"message": "Domain",
+		"description": "Scope will be base domain"
+	},
+	"settingsDefaultScopeLevel2": {
+		"message": "Site",
+		"description": "Scope will be full hostname of site"
+	},
+	"settingsCollapseBlocked": {
+		"message": "Hide placeholder of blocked elements",
+		"description": "A setting in the dashboard's Settings pane"
+	},
+	"settingsCollapseBlacklisted": {
+		"message": "Hide placeholder of blacklisted elements",
+		"description": "A setting in the dashboard's Settings pane: 'blacklisted' means 'for which there is a specific block rule', 'specific' means 'a rule for which the destination hostname is not `*`'"
+	},
+	"settingsNoscriptTagsSpoofed": {
+		"message": "Spoof <code><noscript></code> tags when 1st-party scripts are blocked",
+		"description": "This appears in the Settings pane in the dashboard"
+	},
+	"settingsCloudStorageEnabled": {
+		"message": "Enable cloud storage support",
+		"description": ""
+	},
+	"settingsMatrixNoTooltips": {
+		"message": "Disable tooltips",
+		"description": ""
+	},
+	"privacyPageTitle": {
+		"message": "uMatrix &ndash; Privacy",
+		"description": ""
+	},
+	"privacyDeleteBlockedCookiesPrompt": {
+		"message": "Delete blocked cookies",
+		"description": ""
+	},
+	"privacyDeleteBlockedCookiesHelp": {
+		"message": "<p>Blacklisted cookies are not prevented by <i>uMatrix</i> from entering your browser. However they are prevented from leaving your browser, which is what really matters. Not blocking cookies before they enter your browser gives you the opportunity to be informed that a site tried to use cookies, and furthermore to inspect their contents if you wish.</p><p>Once these blacklisted cookies have been accounted for by <i>uMatrix</i>, they can be removed from your browser if you wish so.</p><p><b>Important note:</b> Extensions can make web requests during the course of their normal operation. These requests can result in cookies being created in the browser. If the hostname from where a cookie originate is not whitelisted, the cookie will be removed from the browser by <i>uMatrix</i> if this option is checked. So be sure that the hostname(s) with which an extension communicate is whitelisted.</p>",
+		"description": ""
+	},
+	"privacyDeleteNonBlockedSessionCookiesPrompt1": {
+		"message": "Delete non-blocked session cookies ",
+		"description": "First part of 'Delete non-blocked session cookies [n] minutes after the last time they have been used'"
+	},
+	"privacyDeleteNonBlockedSessionCookiesPrompt2": {
+		"message": " minutes after the last time they have been used",
+		"description": "Second part of 'Delete non-blocked session cookies [n] minutes after the last time they have been used'"
+	},
+	"privacyDeleteNonBlockedSessionCookiesHelp": {
+		"message": "<p><a href='http://www.w3.org/2001/tag/2010/09/ClientSideStorage.html'>W3C</a>: &ldquo;A session cookie ... is erased when you end the browser session. The session cookie is stored in temporary memory and is not retained after the browser is closed.&rdquo;</p><p>Except that this <a href='https://code.google.com/p/chromium/issues/detail?id=128513'>might not be happening</a> in some browsers. Also, to some, having to close the browser in order for the session cookies to clear might not be early enough.</p>",
+		"description": ""
+	},
+	"privacyDeleteBlockedLocalStoragePrompt": {
+		"message": "Delete <a href='https://en.wikipedia.org/wiki/Web_storage'>local storage</a> content set by blocked hostnames",
+		"description": ""
+	},
+	"privacyDeleteBlockedLocalStorageHelp": {
+		"message": "TODO",
+		"description": ""
+	},
+	"privacyClearCachePrompt1": {
+		"message": "Clear browser cache every",
+		"description": "First part of 'Clear browser cache every [n] minutes'"
+	},
+	"privacyClearCachePrompt2": {
+		"message": "minutes",
+		"description": "Second part of 'Clear browser cache every [n] minutes'"
+	},
+	"privacyClearCacheHelp": {
+		"message": "<p>Some web sites are really bent on tracking you, so much that they will use not-so-nice tricks to work around whatever measures you take in order to not be tracked.</p><p>A few of these tricks rely<sup>[1, 2]</sup> on the <a href='https://en.wikipedia.org/wiki/Web_cache'>browser cache</a>, which content is often long lasting since rarely will users take the time to regularly clear their browser cache.</p><p>There is little inconvenience to clear the browser cache regularly (likelihood is that you won't notice when it happens), and the benefit is to prevent these obnoxious trackers from invading your privacy.</p><p>Check this option to have <i>uMatrix</i> do it for you, at the interval you wish.</p><p>[1] <a href='https://grepular.com/Preventing_Web_Tracking_via_the_Browser_Cache'>&ldquo;Preventing Web Tracking via the Browser Cache&rdquo;</a>\n[2] <a href='http://lucb1e.com/rp/cookielesscookies/'>&ldquo;Cookieless cookies&rdquo;</a></p>",
+		"description": ""
+	},
+	"privacyProcessRefererPrompt": {
+		"message": "Spoof <a href='https://en.wikipedia.org/wiki/HTTP_referer'>HTTP referrer</a> string of third-party requests",
+		"description": ""
+	},
+	"privacyProcessRefererHelp": {
+		"message": "From Wikipedia:<blockquote>HTTP referer is an HTTP header field that identifies the address of the webpage that linked to the resource being requested. ... <b>Because referer information can violate privacy, some web browsers allow the user to disable the sending of referer information.</b></blockquote>If this setting is checked, <i>uMatrix</i> will spoof the HTTP referrer information if the domain name of the HTTP referrer is third-party to the domain name of net request.",
+		"description": ""
+	},
+	"privacyNoMixedContentPrompt": {
+		"message": "Strict HTTPS: forbid mixed content",
+		"description": ""
+	},
+	"privacyNoMixedContentHelp": {
+		"message": "<p>From <a href='https://developer.mozilla.org/en-US/docs/Security/MixedContent'>Mozilla Developer Network</a>:</p><blockquote>If [a] HTTPS page includes content retrieved through regular, cleartext HTTP, then the connection is only partially encrypted: the unencrypted content is accessible to sniffers and can be modified by man-in-the-middle attackers, and therefore the connection is not safeguarded anymore. When a webpage exhibits this behavior, it is called a mixed content page.</blockquote>",
+		"description": ""
+	},
+	"privacyProcessHyperlinkAuditingPrompt": {
+		"message": "Block all <a href='https://html.spec.whatwg.org/multipage/semantics.html#hyperlink-auditing'>hyperlink auditing</a> attempts",
+		"description": ""
+	},
+	"privacyProcessHyperlinkAuditingHelp": {
+		"message": "<p>Hyperlink auditing is a mechanism which allow a party, <b>any party</b>, to be informed about which link a user clicked on a particular web page. It is essentially a tracking feature: it allows a web site, or any third-party to that web site, to be informed about which link you clicked on which one of its web pages. The sole purpose is to track your browsing activity.</p>",
+		"description": ""
+	},
+	"userRulesPermanentHeader": {
+		"message": "Permanent rules",
+		"description": ""
+	},
+	"userRulesTemporaryHeader": {
+		"message": "Temporary rules",
+		"description": ""
+	},
+	"userRulesRevert": {
+		"message": "Revert",
+		"description": "Will remove all temporary rules"
+	},
+	"userRulesCommit": {
+		"message": "Commit",
+		"description": "Will save all temporary rules"
+	},
+	"userRulesEdit": {
+		"message": "Edit",
+		"description": "Will enable manual-edit mode (textarea)"
+	},
+	"userRulesEditSave": {
+		"message": "Save",
+		"description": "Will save manually-edited content and exit manual-edit mode"
+	},
+	"userRulesEditDicard": {
+		"message": "Discard",
+		"description": "Will discard manually-edited content and exit manual-edit mode"
+	},
+	"userRulesImport": {
+		"message": "Import from file...",
+		"description": ""
+	},
+	"userRulesExport": {
+		"message": "Export to file...",
+		"description": ""
+	},
+	"userRulesFormatHint": {
+		"message": "See this page for rule syntax.",
+		"description": ""
+	},
+	"userRulesDefaultFileName": {
+		"message": "my-umatrix-rules.txt",
+		"description": "default file name to use"
+	},
+	"assetsHostsSection": {
+		"message": "Hosts files",
+		"description": "header to identify the hosts files section"
+	},
+	"hostsFilesPrompt": {
+		"message": "All hostnames in a hosts file are loaded as blacklisted hostnames in the global scope.",
+		"description": ""
+	},
+	"hostsFilesStats": {
+		"message": "{{blockedHostnameCount}} distinct blocked hostnames from:",
+		"description": ""
+	},
+	"hostsFilesPerFileStats": {
+		"message": "{{used}} used out of {{total}}",
+		"description": ""
+	},
+	"hostsFilesLastUpdate": {
+		"message": "Last update: {{ago}}",
+		"description": "English: Last update: {{ago}}, where 'ago' will be replaced with something like '2 days ago'"
+	},
+	"hostsFilesApplyChanges": {
+		"message": "Apply changes",
+		"description": ""
+	},
+	"hostsFilesAutoUpdatePrompt": {
+		"message": "Auto-update assets",
+		"description": ""
+	},
+	"hostsFilesUpdateNow": {
+		"message": "Update now",
+		"description": ""
+	},
+	"hostsFilesPurgeAll": {
+		"message": "Purge all caches",
+		"description": ""
+	},
+	"hostsFilesExternalListsHint": {
+		"message": "Import external assets here: \nOne URL per line; invalid URLs will be silently ignored.",
+		"description": ""
+	},
+	"hostsFilesExternalListsParse": {
+		"message": "Parse",
+		"description": ""
+	},
+	"hostsFilesExternalListPurge": {
+		"message": "purge cache",
+		"description": ""
+	},
+	"hostsFilesExternalListNew": {
+		"message": "new version available",
+		"description": ""
+	},
+	"hostsFilesExternalListObsolete": {
+		"message": "outdated",
+		"description": ""
+	},
+	"assetsRecipesSection": {
+		"message": "Ruleset recipes",
+		"description": "header to identify the ruleset files section"
+	},
+	"assetsRecipesSummary": {
+		"message": "Ruleset recipes are imported from the popup panel <em>on demand</em>, i.e. <b>only</b> through user interaction.",
+		"description": ""
+	},
+	"assetsImportLabel": {
+		"message": "Import...",
+		"description": ""
+	},
+	"assetsInlineHostsLabel": {
+		"message": "My hosts",
+		"description": ""
+	},
+	"assetsInlineRecipesLabel": {
+		"message": "My recipes",
+		"description": ""
+	},
+	"rawSettingsWarning": {
+		"message": "Warning! Change these raw configuration settings at your own risk.",
+		"description": ""
+	},
+	"aboutChangelog": {
+		"message": "<a href='https://github.com/gorhill/uMatrix/releases'>Change log</a>",
+		"description": ""
+	},
+	"aboutStorageUsed": {
+		"message": "Storage used: {{storageUsed}} bytes",
+		"description": ""
+	},
+	"aboutDoc": {
+		"message": "<a href='https://github.com/gorhill/uMatrix/wiki'>Documentation</a>",
+		"description": ""
+	},
+	"aboutPermissions": {
+		"message": "<a href='https://github.com/gorhill/uMatrix/wiki/Permissions'>Permissions</a>",
+		"description": ""
+	},
+	"aboutCode": {
+		"message": "Source code (GPLv3)",
+		"description": ""
+	},
+	"aboutIssues": {
+		"message": "Issue tracker",
+		"description": "Text for a link to official issue tracker"
+	},
+	"aboutContributors": {
+		"message": "Contributors",
+		"description": "English: Contributors"
+	},
+	"aboutCodeContributors": {
+		"message": "Code:",
+		"description": ""
+	},
+	"aboutIssueContributors": {
+		"message": "Issues:",
+		"description": ""
+	},
+	"aboutTranslationContributors": {
+		"message": "Translations:",
+		"description": ""
+	},
+	"aboutUserDataHeader": {
+		"message": "Your data",
+		"description": ""
+	},
+	"aboutBackupButton": {
+		"message": "Back up to file...",
+		"description": ""
+	},
+	"aboutBackupFilename": {
+		"message": "my-umatrix-backup.txt",
+		"description": "default filename to use"
+	},
+	"aboutRestoreButton": {
+		"message": "Restore from file...",
+		"description": ""
+	},
+	"aboutRestoreConfirm": {
+		"message": "All your settings will be overwritten using data backed up on {{time}}, and uMatrix will restart.\n\nOverwrite all existing settings using backed up data?",
+		"description": "Message asking user to confirm restore"
+	},
+	"aboutRestoreError": {
+		"message": "The data could not be read or is invalid",
+		"description": ""
+	},
+	"aboutOr": {
+		"message": "... or ...",
+		"description": "English: ... or ..."
+	},
+	"aboutResetButton": {
+		"message": "Reset to default settings",
+		"description": "English: Reset to default settings"
+	},
+	"aboutResetConfirm": {
+		"message": "Caution! this will remove all your custom settings. Are you sure you want to proceed?",
+		"description": "Message asking user to confirm reset"
+	},
+	"mainBlockedPrompt1": {
+		"message": "uMatrix has prevented the following page from loading:",
+		"description": "English: uMatrix has prevented the following page from loading:"
+	},
+	"mainBlockedPrompt2": {
+		"message": "Because of the following rule",
+		"description": "English: Because of the following rule"
+	},
+	"mainBlockedNoParamsPrompt": {
+		"message": "without parameters",
+		"description": "label to be used for the parameter-less URL: https://cloud.githubusercontent.com/assets/585534/9832014/bfb1b8f0-593b-11e5-8a27-fba472a5529a.png"
+	},
+	"mainBlockedBack": {
+		"message": "Go back",
+		"description": "English: Go back"
+	},
+	"mainBlockedClose": {
+		"message": "Close",
+		"description": "English: Close"
+	},
+	"commandRevertAll": {
+		"message": "Revert all temporary changes",
+		"description": ""
+	},
+	"commandWhitelistPageDomain": {
+		"message": "Temporarily whitelist page domain",
+		"description": ""
+	},
+	"commandWhitelistAll": {
+		"message": "Temporarily whitelist all",
+		"description": ""
+	},
+	"commandOpenDashboard": {
+		"message": "Open dashboard",
+		"description": ""
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "a minute ago",
+		"description": "English: a minute ago"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} minutes ago",
+		"description": "English: {{value}} minutes ago"
+	},
+	"elapsedOneHourAgo": {
+		"message": "an hour ago",
+		"description": "English: an hour ago"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} hours ago",
+		"description": "English: {{value}} hours ago"
+	},
+	"elapsedOneDayAgo": {
+		"message": "a day ago",
+		"description": "English: a day ago"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} days ago",
+		"description": "English: {{value}} days ago"
+	},
+	"showDashboardButton": {
+		"message": "Dashboard",
+		"description": "Appears in Firefox's add-on preferences"
+	},
+	"showLoggerButton": {
+		"message": "Logger",
+		"description": "Appears in Firefox's add-on preferences"
+	},
+	"cloudPush": {
+		"message": "Export to cloud storage",
+		"description": "tooltip"
+	},
+	"cloudPull": {
+		"message": "Import from cloud storage",
+		"description": "tooltip"
+	},
+	"cloudNoData": {
+		"message": "...\n...",
+		"description": ""
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "This device name:",
+		"description": "used as a prompt for the user to provide a custom device name"
+	},
+	"genericSubmit": {
+		"message": "Submit",
+		"description": "for generic 'submit' buttons"
+	},
+	"genericRevert": {
+		"message": "Revert",
+		"description": "for generic 'revert' buttons"
+	},
+	"errorCantConnectTo": {
+		"message": "Network error: Unable to connect to {{url}}",
+		"description": ""
+	},
+	"genericApplyChanges": {
+		"message": "Apply changes",
+		"description": "for generic 'Apply changes' buttons"
+	},
+	"genericCopyToClipboard": {
+		"message": "Copy to clipboard",
+		"description": "Label for buttons used to copy something to the clipboard"
+	}
+}

@@ -14,10 +14,16 @@ icon, one popup, one dashboard.**
 
 </div>
 
-| | |
-|:---:|:---:|
-| ![Matrix tab](docs/popup1.png) | ![Canvas tab](docs/popup2.png) |
-| ![Ports tab](docs/popup3.png) | ![Settings](docs/settings.png) |
+<table>
+  <tr>
+    <td width="50%"><img src="docs/popup1.png" alt="Matrix tab"></td>
+    <td width="50%"><img src="docs/popup2.png" alt="Canvas tab"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/popup3.png" alt="Ports tab"></td>
+    <td width="50%"><img src="docs/settings.png" alt="Settings"></td>
+  </tr>
+</table>
 
 ---
 

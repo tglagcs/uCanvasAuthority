@@ -14,6 +14,11 @@ icon, one popup, one dashboard.**
 
 </div>
 
+![Popup — Matrix tab](docs/popup1.png)
+![Popup — Canvas tab](docs/popup2.png)
+![Popup — Ports tab](docs/popup3.png)
+![Dashboard settings](docs/settings.png)
+
 ---
 
 > [!WARNING]
